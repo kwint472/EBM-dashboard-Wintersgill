@@ -7,22 +7,13 @@
     <style>
         /* === CSS CUSTOM PROPERTIES === */
         :root {
-            --primary-gradient: linear-gradient(135deg, #741717 0%, #52130C 100%);
-            --tab-active: #741717;
-            --tab-inactive: #C4BAB3;
-            --step-primary: #741717;
-            --step-secondary: #8D695D;
+            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --tab-active: #2ecc71;
+            --tab-inactive: #95a5a6;
+            --step-green: #27ae60;
+            --step-blue: #3498db;
             --border-radius: 15px;
             --transition-speed: 0.3s;
-            --wool: #C4BAB3;
-            --wine: #741717;
-            --caramel: #8D695D;
-            --chestnut: #603A30;
-            --dark-fire: #52130C;
-            --incomplete-bg: rgba(141, 105, 93, 0.05);
-            --incomplete-border: rgba(141, 105, 93, 0.2);
-            --complete-bg: rgba(116, 23, 23, 0.05);
-            --complete-border: rgba(116, 23, 23, 0.3);
         }
 
         * {
@@ -33,62 +24,39 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, var(--wool), #D4C8C0);
+            background: var(--primary-gradient);
             min-height: 100vh;
             padding: 20px;
-            color: var(--chestnut);
-            line-height: 1.6;
         }
 
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            background: rgba(255, 255, 255, 0.95);
+            background: white;
             border-radius: var(--border-radius);
-            box-shadow: 0 25px 80px rgba(96, 58, 48, 0.15), 0 8px 25px rgba(96, 58, 48, 0.1);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
             overflow: hidden;
-            border: 1px solid rgba(141, 105, 93, 0.2);
-            backdrop-filter: blur(10px);
         }
 
         .header {
-            background: linear-gradient(135deg, var(--wine), var(--dark-fire));
-            color: var(--wool);
-            padding: 40px 30px;
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            padding: 30px;
             text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .header::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(45deg, transparent 49%, rgba(196, 186, 179, 0.1) 50%, transparent 51%);
-            pointer-events: none;
         }
 
         .header h1 {
-            font-size: 2.8em;
+            font-size: 2.5em;
             margin-bottom: 10px;
-            font-weight: 300;
-            position: relative;
-            z-index: 1;
         }
 
         .header p {
-            font-size: 1.3em;
-            opacity: 0.95;
-            position: relative;
-            z-index: 1;
-            font-weight: 300;
+            font-size: 1.2em;
+            opacity: 0.9;
         }
 
         .student-info {
-            background: rgba(196, 186, 179, 0.1);
+            background: rgba(255, 255, 255, 0.1);
             padding: 15px;
             margin-top: 20px;
             border-radius: 10px;
@@ -96,14 +64,13 @@
             grid-template-columns: 1fr 1fr;
             gap: 10px;
             font-size: 0.9em;
-            border: 1px solid var(--wool);
         }
 
         /* === SIMPLE TAB SYSTEM === */
         .tab-nav {
             display: flex;
-            background: var(--wool);
-            border-bottom: 3px solid var(--dark-fire);
+            background: #ecf0f1;
+            border-bottom: 3px solid #bdc3c7;
         }
 
         .tab-button {
@@ -111,30 +78,13 @@
             padding: 20px;
             text-align: center;
             cursor: pointer;
-            background: linear-gradient(135deg, var(--caramel), rgba(141, 105, 93, 0.8));
-            color: var(--wool);
-            font-weight: 600;
-            font-size: 1.05em;
+            background: var(--tab-inactive);
+            color: white;
+            font-weight: bold;
+            font-size: 1.1em;
             transition: all var(--transition-speed);
             border: none;
-            border-right: 2px solid var(--wool);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .tab-button::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
-            transition: left 0.6s ease;
-        }
-
-        .tab-button:hover::before {
-            left: 100%;
+            border-right: 2px solid white;
         }
 
         .tab-button:last-child {
@@ -142,16 +92,14 @@
         }
 
         .tab-button:hover {
-            background: linear-gradient(135deg, var(--chestnut), var(--caramel));
+            background: #7f8c8d;
             transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(96, 58, 48, 0.2);
         }
 
         .tab-button.active {
-            background: linear-gradient(135deg, var(--wine), var(--dark-fire));
+            background: var(--tab-active);
             transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(82, 19, 12, 0.3);
-            z-index: 1;
+            box-shadow: 0 5px 15px rgba(46, 204, 113, 0.3);
         }
 
         .tab-content {
@@ -176,15 +124,14 @@
 
         /* === FLOWCHART STYLING === */
         .flowchart-step {
-            background: var(--dark-fire);
-            color: var(--wool);
+            background: var(--step-green);
+            color: white;
             padding: 15px 25px;
             border-radius: 25px;
             margin: 15px 0;
             font-weight: bold;
             text-align: center;
-            box-shadow: 0 4px 15px rgba(82, 19, 12, 0.3);
-            border: 2px solid var(--wine);
+            box-shadow: 0 4px 15px rgba(39, 174, 96, 0.3);
         }
 
         .decision-diamond {
@@ -204,107 +151,36 @@
         }
 
         .content-file-preview {
-            background: var(--incomplete-bg);
-            border: 2px solid var(--incomplete-border);
-            border-radius: 12px;
-            padding: 25px;
+            background: #f8f9fa;
+            border: 2px dashed #bdc3c7;
+            border-radius: 10px;
+            padding: 20px;
             margin: 20px 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-size: 0.95em;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
             cursor: pointer;
-            transition: all 0.4s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .content-file-preview::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 4px;
-            height: 100%;
-            background: var(--caramel);
-            opacity: 0.6;
             transition: all 0.3s ease;
         }
 
         .content-file-preview:hover {
-            border-color: var(--wine);
-            background: rgba(116, 23, 23, 0.03);
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(96, 58, 48, 0.1);
-        }
-
-        .content-file-preview:hover::before {
-            background: var(--wine);
-            width: 6px;
-            opacity: 1;
-        }
-
-        .content-file-preview.completed {
-            background: var(--complete-bg);
-            border-color: var(--complete-border);
-        }
-
-        .content-file-preview.completed::before {
-            background: var(--wine);
-            opacity: 0.8;
+            border-color: #3498db;
+            background: #f0f8ff;
         }
 
         .content-file-preview h4 {
-            color: var(--wine);
-            margin-bottom: 15px;
+            color: #2c3e50;
+            margin-bottom: 10px;
             font-family: 'Segoe UI', sans-serif;
-            font-weight: 600;
-            font-size: 1.1em;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .file-status {
-            display: inline-block;
-            padding: 4px 8px;
-            border-radius: 12px;
-            font-size: 0.75em;
-            font-weight: 500;
-            margin-left: auto;
-        }
-
-        .status-incomplete {
-            background: rgba(141, 105, 93, 0.15);
-            color: var(--caramel);
-        }
-
-        .status-complete {
-            background: rgba(116, 23, 23, 0.15);
-            color: var(--wine);
-        }
-
-        .placeholder-text {
-            color: var(--caramel);
-            font-style: italic;
-            font-size: 0.9em;
-            line-height: 1.5;
-            padding: 15px;
-            background: rgba(141, 105, 93, 0.05);
-            border-radius: 8px;
-            border-left: 3px solid var(--caramel);
         }
 
         .edit-notice {
-            background: linear-gradient(135deg, rgba(141, 105, 93, 0.08), rgba(141, 105, 93, 0.05));
-            border: 1px solid rgba(141, 105, 93, 0.2);
-            color: var(--chestnut);
-            padding: 12px 16px;
-            border-radius: 8px;
-            margin: 15px 0;
-            font-size: 0.85em;
-            font-weight: 500;
-            display: flex;
-            align-items: center;
-            gap: 8px;
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            color: #856404;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            font-size: 0.8em;
         }
 
         .evidence-type {
@@ -316,18 +192,17 @@
             font-weight: bold;
         }
 
-        .scientific { background: var(--wine); }
-        .practitioner { background: var(--caramel); }
-        .organizational { background: var(--chestnut); }
-        .stakeholder { background: var(--dark-fire); }
+        .scientific { background: #e74c3c; }
+        .practitioner { background: #f39c12; }
+        .organizational { background: #27ae60; }
+        .stakeholder { background: #9b59b6; }
 
         .evidence-section {
             margin: 40px 0;
             padding: 25px;
-            border-left: 5px solid var(--caramel);
-            background: rgba(255, 255, 255, 0.7);
+            border-left: 5px solid #ddd;
+            background: #fafafa;
             border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(96, 58, 48, 0.1);
         }
 
         .evidence-section h3 {
@@ -369,25 +244,22 @@
         }
 
         .progress-step.completed {
-            background: var(--dark-fire);
-            color: var(--wool);
+            background: linear-gradient(135deg, #27ae60, #2ecc71);
+            color: white;
             transform: scale(1.05);
-            box-shadow: 0 4px 15px rgba(82, 19, 12, 0.3);
-            border: 2px solid var(--wine);
+            box-shadow: 0 4px 15px rgba(46, 204, 113, 0.3);
         }
 
         .progress-step.active {
-            background: var(--wine);
-            color: var(--wool);
+            background: linear-gradient(135deg, #3498db, #74b9ff);
+            color: white;
             transform: scale(1.05);
-            box-shadow: 0 4px 15px rgba(116, 23, 23, 0.3);
-            border: 2px solid var(--dark-fire);
+            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
         }
 
         .progress-step.pending {
-            background: var(--caramel);
-            color: var(--wool);
-            border: 2px solid var(--chestnut);
+            background: #bdc3c7;
+            color: white;
         }
 
         .progress-step::after {
@@ -421,8 +293,8 @@
         }
 
         .btn {
-            background: var(--wine);
-            color: var(--wool);
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            color: white;
             padding: 12px 25px;
             border: none;
             border-radius: 25px;
@@ -434,23 +306,19 @@
 
         .btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(116, 23, 23, 0.4);
-            background: var(--caramel);
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
         }
 
         .milestone-tracker {
-            background: rgba(141, 105, 93, 0.1);
-            border-left: 4px solid var(--wine);
+            background: #e8f4fd;
+            border-left: 4px solid #3498db;
             padding: 20px;
             margin: 20px 0;
             border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(82, 19, 12, 0.1);
-            border: 1px solid var(--caramel);
-            border-left: 4px solid var(--wine);
         }
 
         .milestone-tracker h4 {
-            color: var(--dark-fire);
+            color: #2c3e50;
             margin-bottom: 10px;
         }
 
@@ -461,12 +329,12 @@
 
         .checklist li {
             padding: 5px 0;
-            color: var(--chestnut);
+            color: #555;
         }
 
         .checklist li:before {
             content: "☐ ";
-            color: var(--wine);
+            color: #3498db;
             font-weight: bold;
         }
     </style>
@@ -478,10 +346,10 @@
             <p>MGT357 - Fall 2025 | Portfolio Project</p>
             
             <div class="student-info">
-                <div><strong>Student:</strong> Kelsie Wintersgill</div>
-                <div><strong>Problem Focus:</strong> Employee Burnout</div>
+                <div><strong>Student:</strong> [Dr. Peterson]</div>
+                <div><strong>Problem Focus:</strong> [Leadership Training]</div>
                 <div><strong>Repository:</strong> <a href="#" style="color: #74b9ff;">[Your GitHub Link]</a></div>
-                <div><strong>Last Updated:</strong> 9/16/2025</div>
+                <div><strong>Last Updated:</strong> [16 Sep 2025]</div>
             </div>
         </div>
 
@@ -527,21 +395,30 @@
                     </div>
                     
                     <div class="content-file-preview" onclick="openContentFile('ask-problem-definition.txt')">
-                        <h4>📝 content/ask-problem-definition.txt <span class="file-status status-incomplete">Needs Content</span></h4>
-                        <div class="edit-notice">✏️ Click to edit this file in VS Code</div>
-                        <pre>Define your management problem using X → Y Framework and PICOC Framework. Your problem statement should clearly identify the current problematic situation and desired outcome state.</pre>
+                        <h4>📝 content/ask-problem-definition.txt</h4>
+                        <div class="edit-notice">🖊️ Click to edit this file in VS Code</div>
+                        <pre id="problem-definition-content">[This content will load from your .txt file]
+
+Use the X → Y Framework and PICOC Framework to define your management problem clearly.
+See the template file for detailed prompts and structure.</pre>
                     </div>
 
                     <div class="content-file-preview" onclick="openContentFile('ask-stakeholder-analysis.txt')">
-                        <h4>📝 content/ask-stakeholder-analysis.txt <span class="file-status status-incomplete">Needs Content</span></h4>
-                        <div class="edit-notice">✏️ Click to edit this file in VS Code</div>
-                        <pre>Identify all stakeholders affected by your problem and potential solutions. Consider internal and external stakeholders, their interests, and influence levels.</pre>
+                        <h4>📝 content/ask-stakeholder-analysis.txt</h4>
+                        <div class="edit-notice">🖊️ Click to edit this file in VS Code</div>
+                        <pre id="stakeholder-analysis-content">[This content will load from your .txt file]
+
+Identify all stakeholders affected by your problem and potential solution.
+Consider internal and external stakeholders, their interests, and influence levels.</pre>
                     </div>
 
                     <div class="content-file-preview" onclick="openContentFile('ask-success-criteria.txt')">
-                        <h4>📝 content/ask-success-criteria.txt <span class="file-status status-incomplete">Needs Content</span></h4>
-                        <div class="edit-notice">✏️ Click to edit this file in VS Code</div>
-                        <pre>Define specific, measurable criteria for success. How will you know if your evidence-based solution worked? Include quantitative and qualitative measures.</pre>
+                        <h4>📝 content/ask-success-criteria.txt</h4>
+                        <div class="edit-notice">🖊️ Click to edit this file in VS Code</div>
+                        <pre id="success-criteria-content">[This content will load from your .txt file]
+
+Define specific, measurable criteria for success.
+How will you know if your evidence-based solution worked?</pre>
                     </div>
 
                     <div class="flowchart-step">
@@ -588,21 +465,21 @@
                         <h3 class="evidence-type scientific">🔬 Scientific Evidence</h3>
                         
                         <div class="content-file-preview" onclick="openContentFile('evidence-scientific-methods.txt')">
-                            <h4>📝 content/evidence-scientific-methods.txt <span class="file-status status-incomplete">In Progress</span></h4>
-                            <div class="edit-notice">✏️ Click to edit this file in VS Code</div>
-                            <pre>Document your systematic search strategy including databases, keywords, Boolean search terms, and selection criteria for leadership-burnout research.</pre>
+                            <h4>📝 content/evidence-scientific-methods.txt</h4>
+                            <div class="edit-notice">🖊️ Click to edit this file in VS Code</div>
+                            <pre>[Document your search strategy, databases used, keywords, and selection criteria]</pre>
                         </div>
 
                         <div class="content-file-preview" onclick="openContentFile('evidence-scientific-sources.txt')">
-                            <h4>📝 content/evidence-scientific-sources.txt <span class="file-status status-incomplete">Needs Content</span></h4>
-                            <div class="edit-notice">✏️ Click to edit this file in VS Code</div>
-                            <pre>List and summarize 8-10 peer-reviewed studies on leadership interventions and burnout reduction. Include meta-analyses, systematic reviews, and intervention studies.</pre>
+                            <h4>📝 content/evidence-scientific-sources.txt</h4>
+                            <div class="edit-notice">🖊️ Click to edit this file in VS Code</div>
+                            <pre>[List and summarize the research studies, meta-analyses, and systematic reviews you found]</pre>
                         </div>
 
                         <div class="content-file-preview" onclick="openContentFile('evidence-scientific-appraisal.txt')">
-                            <h4>📝 content/evidence-scientific-appraisal.txt <span class="file-status status-incomplete">Needs Content</span></h4>
-                            <div class="edit-notice">✏️ Click to edit this file in VS Code</div>
-                            <pre>Evaluate study quality, methodological rigor, and relevance using evidence hierarchy. Assess risk of bias and applicability to your research question.</pre>
+                            <h4>📝 content/evidence-scientific-appraisal.txt</h4>
+                            <div class="edit-notice">🖊️ Click to edit this file in VS Code</div>
+                            <pre>[Evaluate the quality, reliability, and relevance of your scientific evidence]</pre>
                         </div>
                     </div>
 
@@ -798,21 +675,10 @@ Weight the evidence and form recommendations.</pre>
             });
         }
 
-        // Function to update the date
-        function updateLastUpdatedDate() {
-            const today = new Date();
-            const formattedDate = `${today.getMonth() + 1}/${today.getDate()}/${today.getFullYear()}`;
-            const dateElement = document.querySelector('.student-info div:last-child');
-            if (dateElement) {
-                dateElement.innerHTML = `<strong>Last Updated:</strong> ${formattedDate}`;
-            }
-        }
-
         // Initialize dashboard
         document.addEventListener('DOMContentLoaded', function() {
             loadContentFiles();
             updateProgressIndicator(1);
-            updateLastUpdatedDate(); // Update the date on page load
         });
     </script>
     <script src="content-loader.js"></script>
