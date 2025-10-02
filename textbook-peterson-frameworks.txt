@@ -1,0 +1,14 @@
+# Peterson Framework Content from Textbook
+# Copy and paste relevant sections here
+
+## Scientific Evidence Evaluation Framework
+[Paste content about how Peterson recommends evaluating scientific studies]
+
+## Search Strategy Guidelines  
+[Paste content about systematic search approaches]
+
+## Quality Assessment Criteria
+[Paste content about assessing study quality and bias]
+
+## Evidence Hierarchy
+[Paste content about ranking different types of evidence]

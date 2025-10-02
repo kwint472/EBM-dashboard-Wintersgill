@@ -1,0 +1,336 @@
+# Scientific Evidence: Methods & Acquisition Strategy
+# Document your systematic approach to finding research evidence
+
+## Research Question
+What are the most effective leadership interventions to reduce burnout among healthcare workers post COVID-19?
+
+**Specific Research Sub-Questions:**
+1. What leadership styles and practices show the strongest impact on healthcare worker burnout reduction?
+2. What evidence supports the effectiveness of leadership development interventions in reducing healthcare worker burnout?
+3. How do leadership interventions impact healthcare worker retention and job satisfaction?
+4. What are the documented impacts of healthcare worker burnout on patient care and organizational outcomes?
+5. Which leadership development approaches show proven results in healthcare settings post-COVID-19? 
+
+## Search Strategy
+
+
+## Search Strategy
+
+### Priority Database Sequence
+**Tier 1 - Primary Sources:**
+- [x] **PubMed/MEDLINE** - Priority for health/medical research
+- [ ] **PsycINFO** - Priority for psychological and occupational health
+- [ ] **Business Source Premier** - For organizational intervention studies
+
+## Study Selection Criteria
+
+### Inclusion Criteria
+**Study Design (Priority Order):**
+1. **Meta-analyses** - Highest priority for evidence synthesis
+2. **Systematic reviews** - Second priority for comprehensive overviews
+3. **Longitudinal studies** - For tracking burnout changes over time
+4. **Cross-sectional studies** - For current state assessment (if above unavailable)
+
+**Population Requirements:**
+- Studies including healthcare workers (nurses, physicians, support staff)
+- Adult healthcare professionals (18+ years)
+- Studies conducted in or including United States healthcare settings
+- Sample size ≥ 50 participants (for adequate statistical power)
+
+**Temporal Requirements:**
+- **Baseline studies:** Published 2015-2019, data collected 2010-2019
+- **Impact studies:** Published 2020-2025, data collected 2020-2022
+- **Intervention studies:** Published 2021-2025, data collected during or after 2020
+
+**Content Requirements:**
+- Primary focus on burnout, emotional exhaustion, or occupational stress in healthcare settings
+- Leadership interventions or leadership styles as primary focus
+- Quantitative burnout measurement (validated instruments preferred)
+- Clear methodology and statistical analysis
+
+### Exclusion Criteria
+- Case studies or qualitative-only studies (will be captured in practitioner evidence)
+- Non-peer reviewed sources (grey literature)
+- Studies focused solely on non-healthcare populations
+- Studies without US healthcare participants or data
+- Opinion pieces, editorials, or commentary articles
+- Studies with n < 50 participants
+- Studies not addressing leadership or burnout relationship
+
+## Quality Appraisal Framework
+
+### Evidence Hierarchy (Peterson Framework)
+**Level 1 - Highest Quality:**
+- Meta-analyses of randomized controlled trials
+- Systematic reviews with meta-analysis
+
+**Level 2 - High Quality:**
+- Individual randomized controlled trials
+- Systematic reviews without meta-analysis
+
+**Level 3 - Moderate Quality:**
+- Controlled studies without randomization
+- Longitudinal cohort studies
+
+**Level 4 - Lower Quality:**
+- Cross-sectional studies
+- Case-control studies
+
+### Study Quality Assessment Criteria
+**For each selected study, evaluate:**
+
+1. **Methodological Rigor:**
+   - Sample size adequacy and power calculation
+   - Validated burnout measurement instruments
+   - Appropriate statistical analysis
+   - Control for confounding variables
+
+2. **Relevance Assessment:**
+   - Population alignment with research question
+   - Outcome measures relevant to burnout
+   - Temporal alignment with research timeframe
+   - Geographic relevance to US context
+
+3. **Risk of Bias Evaluation:**
+   - Selection bias (sampling methodology)
+   - Measurement bias (instrument validity)
+   - Confounding variables addressed
+   - Statistical analysis appropriateness
+
+## Search Results Tracking System
+
+### Search Documentation Template
+**For each database search:**
+- Database name and date searched
+- Search string used
+- Number of results retrieved
+- Number of results after deduplication
+- Number meeting inclusion criteria after title/abstract screening
+- Number meeting inclusion criteria after full-text review
+
+### Article Screening Process
+**Stage 1 - Title/Abstract Screening:**
+- [ ] Create tracking spreadsheet with columns: Title, Authors, Year, Journal, Abstract, Include/Exclude, Reason
+- [ ] Screen all retrieved articles for basic inclusion criteria
+- [ ] Document exclusion reasons
+
+**Stage 2 - Full-Text Review:**
+- [ ] Obtain full text of articles passing Stage 1
+- [ ] Apply detailed inclusion/exclusion criteria
+- [ ] Complete quality assessment for included studies
+- [ ] Document final selection decisions
+
+### Target Numbers
+- **Goal:** 8-10 high-quality peer-reviewed studies
+- **Distribution target:** 
+  - 2-3 meta-analyses or systematic reviews (leadership intervention effectiveness)
+  - 3-4 leadership intervention studies in healthcare settings
+  - 2-3 outcome studies (burnout reduction, retention impacts)
+- **Leadership focus balance:** 
+  - 2-3 studies on transformational/supportive leadership
+  - 2-3 studies on leadership development programs  
+  - 2-3 studies on leadership communication/emotional intelligence
+- **Population coverage:** Healthcare workers (nurses, physicians, support staff)
+- [ ] **Google Scholar** - For grey literature and recent preprints
+- [ ] **Cochrane Library** - For systematic reviews and meta-analyses
+
+### Boolean Search Strategy
+
+**Core Search Components:**
+1. **Burnout Terms:** burnout OR "emotional exhaustion" OR "job stress" OR "occupational stress" OR "work stress"
+2. **Healthcare Population:** healthcare OR "health care" OR nurse OR nurses OR nursing OR physician OR doctor OR "medical staff" OR "hospital staff"
+3. **Leadership Terms:** leadership OR "transformational leadership" OR "supportive leadership" OR "authentic leadership" OR "leadership development" OR "leadership training" OR supervision OR management
+4. **Outcome Terms:** retention OR turnover OR "job satisfaction" OR engagement OR performance
+5. **Location Filter:** United States OR USA OR America
+
+**Primary Search String:**
+```
+(burnout OR "emotional exhaustion" OR "job stress" OR "occupational stress") 
+AND 
+(healthcare OR "health care" OR nurse OR nurses OR nursing OR physician OR doctor OR "medical staff")
+AND 
+(leadership OR "transformational leadership" OR "supportive leadership" OR "leadership development")
+AND
+("United States" OR USA OR America)
+```
+
+**Leadership Intervention Focused Search:**
+```
+(burnout OR "emotional exhaustion") 
+AND 
+(healthcare OR nursing OR "health care")
+AND 
+("leadership development" OR "leadership training" OR "leadership intervention" OR "transformational leadership")
+AND 
+(intervention OR program OR training OR implementation)
+```
+
+**Baseline Comparison Search:**
+```
+(burnout OR "emotional exhaustion" OR "job stress") 
+AND 
+(healthcare OR "health care" OR nursing)
+AND 
+("United States" OR USA)
+NOT 
+(COVID OR pandemic)
+AND 
+(2015:2019[dp])
+```
+Job burnout
+Occupational stress
+Emotional exhaustion
+Depersonalization
+
+#### Primary Keywords
+[List main terms related to your problem/solution]
+
+#### Secondary Keywords  
+[List related terms and synonyms]
+
+#### Boolean Search Combinations
+[Document your search string combinations]
+- Example: ("employee retention" OR "staff turnover") AND ("small business" OR SME)
+
+### Search Filters Applied
+- **Date Range:** [Years included in search]
+- **Language:** [Languages included]
+- **Study Types:** [Research designs included/excluded]
+- **Geographic Scope:** [Regions/countries of interest]
+- **Industry Focus:** [Relevant sectors]
+
+## Selection Criteria
+
+### Inclusion Criteria
+[What studies WILL you include?]
+- Study design requirements
+- Population/context requirements
+- Outcome measures
+- Quality thresholds
+
+### Exclusion Criteria  
+[What studies will you EXCLUDE?]
+- Study limitations
+- Context mismatches
+- Quality concerns
+- Accessibility issues
+
+## Search Results Summary
+
+### Initial Search Results
+- **Total Articles Found:** [Number across all databases]
+- **After Removing Duplicates:** [Number of unique articles]
+- **After Title/Abstract Screening:** [Number meeting basic criteria]
+- **Selected for Full Review:** [Final number for detailed analysis]
+
+### Search Documentation
+[Keep a record of what you searched and when]
+
+**Date:** [Search date]
+**Database:** [Which database]
+**Search Terms:** [Exact search string used]
+**Results:** [Number of results]
+**Notes:** [Any observations about the search]
+
+## Quality Assessment Approach
+[How will you evaluate study quality?]
+
+### Research Design Hierarchy
+1. **Systematic Reviews/Meta-analyses** [Highest quality]
+2. **Randomized Controlled Trials** [High quality]
+3. **Quasi-experimental Studies** [Medium-high quality]
+4. **Cohort Studies** [Medium quality]
+5. **Cross-sectional Studies** [Medium-low quality]
+6. **Case Studies** [Lower quality but valuable for context]
+
+### Quality Criteria Checklist
+- [ ] Clear research question
+- [ ] Appropriate methodology
+- [ ] Adequate sample size
+- [ ] Valid measurement tools
+- [ ] Appropriate statistical analysis
+- [ ] Clear reporting of results
+- [ ] Discussion of limitations
+- [ ] Peer-reviewed publication
+
+## Documentation Process
+[How you'll organize and track your findings]
+
+### Reference Management
+[How you'll keep track of citations]
+
+### Evidence Extraction Form
+[What information you'll record for each study]
+- Citation details
+- Study design and methodology
+- Sample characteristics
+- Key findings
+- Relevance to your problem/solution
+- Quality assessment
+
+## Challenges and Limitations
+[Document any issues with your search process]
+
+### Search Limitations
+[What couldn't you access or find?]
+
+### Resource Constraints
+[Time, database access, or other limitations]
+
+### Topic-Specific Challenges
+[Issues unique to your research area]
+
+---
+INSTRUCTIONS:
+1. Be systematic and comprehensive in your approach
+2. Document everything so others could replicate your search
+3. Focus on research relevant to both your problem AND potential solutions
+4. Use library resources and ask librarians for help with database searches
+5. Keep detailed records of what you find and why you include/exclude studies
+
+-----------------------
+## Search Strategy Summary
+
+**Management Problem:** US healthcare organizations are experiencing elevated employee burnout among healthcare workers following COVID-19, with insufficient leadership strategies to address this crisis. There is a critical need to identify and implement evidence-based leadership development interventions that can effectively reduce burnout and improve retention among healthcare workers.
+
+**Research Question:** What are the most effective leadership interventions to reduce burnout among healthcare workers post COVID-19?
+
+**X Variable (Intervention):** Leadership interventions/development
+**Y Variable (Outcome):** Burnout reduction and retention
+
+### Recommended Search Approach
+
+**Best Combined Query:**
+```
+(burnout OR "emotional exhaustion" OR "job stress") 
+AND 
+(healthcare OR nursing OR "health care" OR physician)
+AND 
+(leadership OR "leadership development" OR "transformational leadership")
+AND
+("United States" OR USA)
+```
+
+### Database Setup & Filters
+- **Primary Database:** PubMed/MEDLINE (healthcare focus)
+- **Secondary Database:** PsycINFO (leadership/organizational psychology)
+- **Tertiary Database:** Business Source Complete (organizational interventions)
+
+### Database Filters:
+- **Language:** English
+- **Peer Reviewed:** Yes
+- **Date Range:** 2015-2025 (baseline + post-COVID studies)
+- **Population:** Healthcare workers
+- **Geographic:** United States
+
+### Quality Hierarchy Focus:
+1. **Meta-analyses & Systematic Reviews** (highest priority)
+2. **Randomized Controlled Trials** of leadership interventions
+3. **Longitudinal Studies** tracking burnout over time
+4. **Cross-sectional Studies** with validated burnout measures
+
+### Next Steps
+1. Execute searches using refined healthcare + leadership queries
+2. Prioritize meta-analyses and systematic reviews
+3. Focus on studies with validated burnout measures (MBI, etc.)
+4. Document findings in evidence-scientific-sources.txt

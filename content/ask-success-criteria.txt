@@ -1,0 +1,129 @@
+# Success Criteria Definition
+# Define specific, measurable criteria to evaluate solution effectiveness
+
+## SMART Success Criteria
+
+### Criterion 1: [Primary Outcome]
+- **Specific:** [Exactly what will be measured?]
+- **Measurable:** [How will it be quantified?]
+- **Achievable:** [Is this realistic given resources and constraints?]
+- **Relevant:** [Does this directly address the core problem?]
+- **Time-bound:** [When will this be achieved/measured?]
+
+### Criterion 2: [Secondary Outcome]
+- **Specific:** [Exactly what will be measured?]
+- **Measurable:** [How will it be quantified?]
+- **Achievable:** [Is this realistic given resources and constraints?]
+- **Relevant:** [Does this directly address the core problem?]
+- **Time-bound:** [When will this be achieved/measured?]
+
+### Criterion 3: [Additional Outcome]
+- **Specific:** [Exactly what will be measured?]
+- **Measurable:** [How will it be quantified?]
+- **Achievable:** [Is this realistic given resources and constraints?]
+- **Relevant:** [Does this directly address the core problem?]
+- **Time-bound:** [When will this be achieved/measured?]
+
+## Measurement Framework
+
+### Quantitative Metrics
+[List specific numbers, percentages, or quantities you'll track]
+
+**Example metrics:**
+- Cost reduction: [Target amount or percentage]
+- Time savings: [Target time reduction]
+- Quality improvement: [Target quality score]
+- Customer satisfaction: [Target rating or score]
+- Employee engagement: [Target survey score]
+
+### Qualitative Indicators
+[List qualitative changes you expect to observe]
+
+**Example indicators:**
+- Improved stakeholder feedback
+- Enhanced process efficiency
+- Better collaboration
+- Reduced conflict or complaints
+- Increased innovation or creativity
+
+### Leading vs. Lagging Indicators
+
+#### Leading Indicators (Early signals of progress)
+[Metrics that predict future success]
+
+#### Lagging Indicators (Final outcomes)
+[Metrics that confirm success after the fact]
+
+## Baseline Measurements
+
+### Current State Metrics
+[Document current performance levels for comparison]
+
+**Metric 1:** [Name] = [Current value]
+**Metric 2:** [Name] = [Current value]
+**Metric 3:** [Name] = [Current value]
+
+### Data Collection Plan
+[How will you gather baseline and ongoing measurements?]
+
+## Success Thresholds
+
+### Minimum Acceptable Improvement
+[What's the minimum change that would justify the solution?]
+
+### Target Performance Level
+[What's the realistic goal for improvement?]
+
+### Stretch Goal
+[What would exceptional success look like?]
+
+## Stakeholder-Specific Success Criteria
+
+### Management Success Measures
+[What will leadership consider successful?]
+
+### Employee Success Measures
+[What will staff consider successful?]
+
+### Customer Success Measures
+[What will customers/clients consider successful?]
+
+## Risk Indicators
+[What metrics would suggest the solution is failing?]
+
+### Red Flags
+[Warning signs to monitor]
+
+### Mitigation Triggers
+[When to adjust the approach]
+
+## Timeline for Assessment
+
+### Short-term (30-90 days)
+[What should improve quickly?]
+
+### Medium-term (3-6 months)
+[What should improve over time?]
+
+### Long-term (6-12 months)
+[What are the ultimate outcomes?]
+
+## Reporting Framework
+[How will progress be communicated to stakeholders?]
+
+### Dashboard Metrics
+[Key metrics for ongoing monitoring]
+
+### Regular Reports
+[What will be reported and how often?]
+
+### Milestone Reviews
+[When will formal assessments occur?]
+
+---
+INSTRUCTIONS:
+1. Be specific and measurable - avoid vague terms like "better" or "improved"
+2. Ensure criteria are achievable given your resources and timeline
+3. Include both quantitative and qualitative measures
+4. Consider different stakeholder perspectives on success
+5. Plan how you'll actually collect the measurement data

@@ -1,0 +1,88 @@
+# Stakeholder Analysis
+# Identify and analyze all parties affected by your problem and solution
+
+## Internal Stakeholders
+
+### Senior Management
+- **Interest in Problem:** [How does this problem affect leadership?]
+- **Interest in Solution:** [What would leadership gain from solving this?]
+- **Influence Level:** [High/Medium/Low influence on solution success]
+- **Support Level:** [Likely supporter/neutral/resistant]
+
+### Middle Management
+- **Interest in Problem:** [How does this problem affect middle managers?]
+- **Interest in Solution:** [What would middle management gain/lose?]
+- **Influence Level:** [High/Medium/Low influence on implementation]
+- **Support Level:** [Likely supporter/neutral/resistant]
+
+### Employees/Staff
+- **Interest in Problem:** [How does this problem affect front-line workers?]
+- **Interest in Solution:** [What would employees gain/lose from solution?]
+- **Influence Level:** [High/Medium/Low influence on solution success]
+- **Support Level:** [Likely supporter/neutral/resistant]
+
+### Other Internal Groups
+[Add additional internal stakeholder groups as relevant]
+- **Department/Group:** [Name]
+- **Interest in Problem:** [How affected?]
+- **Interest in Solution:** [What's at stake?]
+- **Influence Level:** [High/Medium/Low]
+- **Support Level:** [Likely response]
+
+## External Stakeholders
+
+### Customers/Clients
+- **Interest in Problem:** [How does this problem affect customers?]
+- **Interest in Solution:** [What would customers gain/lose?]
+- **Influence Level:** [High/Medium/Low influence through feedback/loyalty]
+- **Support Level:** [Likely supporter/neutral/resistant]
+
+### Suppliers/Partners
+- **Interest in Problem:** [How does this problem affect business partners?]
+- **Interest in Solution:** [What would partners gain/lose?]
+- **Influence Level:** [High/Medium/Low influence on solution]
+- **Support Level:** [Likely supporter/neutral/resistant]
+
+### Regulatory Bodies
+- **Interest in Problem:** [Regulatory implications of the problem?]
+- **Interest in Solution:** [Compliance considerations?]
+- **Influence Level:** [High/Medium/Low regulatory power]
+- **Support Level:** [Likely response to solution]
+
+### Community/Society
+- **Interest in Problem:** [Broader social implications?]
+- **Interest in Solution:** [Community benefits/concerns?]
+- **Influence Level:** [High/Medium/Low through public opinion]
+- **Support Level:** [Likely community response]
+
+## Stakeholder Engagement Strategy
+
+### High Influence, High Interest (Manage Closely)
+[List stakeholders and specific engagement approach]
+
+### High Influence, Low Interest (Keep Satisfied)
+[List stakeholders and specific engagement approach]
+
+### Low Influence, High Interest (Keep Informed)
+[List stakeholders and specific engagement approach]
+
+### Low Influence, Low Interest (Monitor)
+[List stakeholders and minimal engagement approach]
+
+## Key Stakeholder Insights for Evidence Collection
+
+### Who to Interview/Survey
+[Priority stakeholders for gathering evidence]
+
+### What Questions to Ask
+[Key questions for each stakeholder group]
+
+### How to Engage
+[Methods for reaching different stakeholder groups]
+
+---
+INSTRUCTIONS:
+1. Be specific about each stakeholder group's interests and influence
+2. Consider both obvious and hidden stakeholders
+3. Think about implementation challenges from stakeholder perspectives
+4. This analysis will guide your stakeholder evidence collection
