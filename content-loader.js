@@ -4,10 +4,18 @@
     let loadedFiles = new Set(); // Track successfully loaded files
     let isInitialLoad = true;
     
-    document.addEventListener('DOMContentLoaded', loadAllContent);
+    document.addEventListener('DOMContentLoaded', function() {
+        console.log('🚀 DOM loaded, starting content loader...');
+        loadAllContent();
+    });
+    
+    // Also try loading after a short delay and periodically
+    setTimeout(loadAllContent, 1000);
     const intervalId = setInterval(loadAllContent, 3000);
     
     async function loadAllContent() {
+        console.log('🔍 loadAllContent called, checking for containers...');
+        
         const contentFiles = [
             'ask-problem-definition.txt', 'ask-stakeholder-analysis.txt', 'ask-success-criteria.txt',
             'evidence-scientific-methods.txt', 'evidence-scientific-sources.txt', 'evidence-scientific-appraisal.txt',
@@ -17,6 +25,7 @@
             'synthesis-integration.txt', 'application-implementation.txt', 'assessment-monitoring.txt'
         ];
         
+        console.log(`📋 Looking for ${contentFiles.length} content files...`);
         let newFilesLoaded = 0;
         
         for (let filename of contentFiles) {
@@ -32,8 +41,12 @@
                     
                     // Find the target container
                     const targetDiv = document.querySelector(`[onclick*="${filename}"]`);
+                    console.log(`🎯 Looking for container with onclick containing "${filename}": ${targetDiv ? 'FOUND' : 'NOT FOUND'}`);
+                    
                     if (targetDiv) {
                         const pre = targetDiv.querySelector('pre');
+                        console.log(`📄 Pre element in container: ${pre ? 'FOUND' : 'NOT FOUND'}`);
+                        
                         if (pre) {
                             try {
                                 // Enhanced content processing
