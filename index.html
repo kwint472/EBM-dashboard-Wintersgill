@@ -5,20 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evidence-Based Management Portfolio | MGT357</title>
     <style>
-        /* === MODERN PROFESSIONAL DESIGN === */
+        /* === SIMPLE CLEAN DESIGN === */
         :root {
-            --primary-dark: #2C3E50;
-            --primary-light: #FAFAFA;
-            --accent-blue: #4A90E2;
-            --success-green: #27AE60;
-            --warning-amber: #F39C12;
-            --text-primary: #2C3E50;
-            --text-secondary: #7F8C8D;
-            --border-light: #E8ECEF;
-            --shadow-soft: 0 2px 20px rgba(44, 62, 80, 0.1);
-            --shadow-medium: 0 4px 30px rgba(44, 62, 80, 0.15);
-            --border-radius: 8px;
-            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --primary-color: #2C3E50;
+            --accent-color: #3498DB;
+            --success-color: #27AE60;
+            --background-color: #F8F9FA;
+            --text-color: #2C3E50;
+            --border-color: #DEE2E6;
+            --transition: all 0.3s ease;
         }
 
         * {
@@ -28,148 +23,192 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background: var(--primary-light);
-            color: var(--text-primary);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--background-color);
+            color: var(--text-color);
             line-height: 1.6;
-            font-size: 16px;
+            font-size: 18px;
         }
 
-        .dashboard-container {
-            display: grid;
-            grid-template-columns: 280px 1fr;
-            min-height: 100vh;
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
             background: white;
+            min-height: 100vh;
         }
 
-        /* === SIDEBAR NAVIGATION === */
-        .sidebar {
-            background: var(--primary-dark);
+        /* === HEADER === */
+        .header {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
             color: white;
-            padding: 2rem 0;
-            position: fixed;
-            width: 280px;
-            height: 100vh;
-            overflow-y: auto;
-            z-index: 100;
+            padding: 2rem;
+            text-align: center;
         }
 
-        .logo-section {
-            padding: 0 2rem 2rem 2rem;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            margin-bottom: 2rem;
-        }
-
-        .logo-section h1 {
-            font-size: 1.4rem;
-            font-weight: 600;
+        .header h1 {
+            font-size: 2.5rem;
             margin-bottom: 0.5rem;
-        }
-
-        .logo-section p {
-            font-size: 0.9rem;
-            opacity: 0.7;
-            font-weight: 300;
-        }
-
-        .nav-section {
-            margin-bottom: 2rem;
-        }
-
-        .nav-title {
-            padding: 0 2rem;
-            font-size: 0.8rem;
             font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            opacity: 0.6;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* === SIMPLE TAB NAVIGATION === */
+        .tab-nav {
+            display: flex;
+            background: white;
+            border-bottom: 3px solid var(--border-color);
+            overflow-x: auto;
+        }
+
+        .tab-button {
+            flex: 1;
+            padding: 1.5rem 2rem;
+            text-align: center;
+            cursor: pointer;
+            background: #F8F9FA;
+            color: var(--text-color);
+            font-weight: 600;
+            font-size: 1rem;
+            transition: var(--transition);
+            border: none;
+            border-right: 1px solid var(--border-color);
+            min-width: 200px;
+        }
+
+        .tab-button:hover {
+            background: #E9ECEF;
+        }
+
+        .tab-button.active {
+            background: var(--accent-color);
+            color: white;
+        }
+
+        .tab-button:last-child {
+            border-right: none;
+        }
+
+        /* === CONTENT AREAS === */
+        .tab-content {
+            padding: 0;
+        }
+
+        .tab-panel {
+            display: none;
+            padding: 3rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .tab-panel.active {
+            display: block;
+        }
+
+        .tab-panel h2 {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .tab-panel h3 {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin: 2rem 0 1rem 0;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+        }
+
+        /* === CONTENT SECTIONS === */
+        .content-section {
+            background: white;
+            margin-bottom: 2rem;
+            padding: 2rem;
+            border-left: 4px solid var(--accent-color);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .content-section h4 {
+            color: var(--primary-color);
+            font-size: 1.3rem;
             margin-bottom: 1rem;
         }
 
-        .nav-item {
-            display: block;
-            padding: 0.75rem 2rem;
-            color: white;
-            text-decoration: none;
+        .content-preview {
+            background: #F8F9FA;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            margin: 1rem 0;
+            cursor: pointer;
             transition: var(--transition);
-            border-left: 3px solid transparent;
-            position: relative;
         }
 
-        .nav-item:hover {
-            background: rgba(255, 255, 255, 0.1);
-            border-left-color: var(--accent-blue);
+        .content-preview:hover {
+            background: #E9ECEF;
+            border-color: var(--accent-color);
         }
 
-        .nav-item.active {
-            background: rgba(74, 144, 226, 0.2);
-            border-left-color: var(--accent-blue);
-        }
-
-        .nav-item.completed::after {
-            content: '✓';
-            position: absolute;
-            right: 2rem;
-            color: var(--success-green);
-            font-weight: bold;
-        }
-
-        .milestone-progress {
-            padding: 1rem 2rem;
-            background: rgba(255, 255, 255, 0.05);
-            margin: 1rem;
-            border-radius: var(--border-radius);
-        }
-
-        .progress-bar {
-            height: 4px;
-            background: rgba(255, 255, 255, 0.2);
-            border-radius: 2px;
-            overflow: hidden;
-            margin-top: 0.5rem;
-        }
-
-        .progress-fill {
-            height: 100%;
-            background: var(--success-green);
-            transition: var(--transition);
-            width: 25%;
-        }
-
-        /* === MAIN CONTENT AREA === */
-        .main-content {
-            margin-left: 280px;
-            background: var(--primary-light);
-            min-height: 100vh;
-        }
-
-        .top-nav {
-            background: white;
-            padding: 1.5rem 2rem;
-            border-bottom: 1px solid var(--border-light);
-            box-shadow: var(--shadow-soft);
-            position: sticky;
-            top: 0;
-            z-index: 50;
-        }
-
-        .breadcrumb {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            font-size: 0.9rem;
-            color: var(--text-secondary);
+        .file-name {
+            font-weight: 600;
+            color: var(--primary-color);
             margin-bottom: 0.5rem;
         }
 
-        .page-title {
-            font-size: 1.8rem;
-            font-weight: 600;
-            color: var(--text-primary);
+        .file-description {
+            color: #6C757D;
+            font-size: 0.95rem;
         }
 
-        .content-area {
+        /* === PROGRESS INDICATORS === */
+        .progress-section {
+            background: linear-gradient(135deg, #E8F5E8, #F0F8F0);
             padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .progress-title {
+            font-size: 1.4rem;
+            color: var(--success-color);
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .milestone-status {
+            display: inline-flex;
+            align-items: center;
+            background: var(--success-color);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: 600;
+        }
+
+        /* === RESPONSIVE DESIGN === */
+        @media (max-width: 768px) {
+            .tab-nav {
+                flex-direction: column;
+            }
+            
+            .tab-button {
+                min-width: auto;
+                border-right: none;
+                border-bottom: 1px solid var(--border-color);
+            }
+            
+            .tab-panel {
+                padding: 2rem 1rem;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
         }
 
         /* === CARD COMPONENTS === */
@@ -644,7 +683,142 @@
     </style>
 </head>
 <body>
-    <div class="dashboard-container">
+    <div class="container">
+        <div class="header">
+            <h1>🎯 Evidence-Based Management Portfolio</h1>
+            <p>MGT357 - Fall 2025 | Healthcare Worker Burnout & Leadership Solutions</p>
+        </div>
+
+        <div class="tab-nav">
+            <button class="tab-button active" onclick="showTab(1)">ASK Phase</button>
+            <button class="tab-button" onclick="showTab(2)">Scientific Evidence</button>
+            <button class="tab-button" onclick="showTab(3)">Practitioner Evidence</button>
+            <button class="tab-button" onclick="showTab(4)">Solution & Implementation</button>
+        </div>
+
+        <div class="tab-content">
+            <!-- ASK Phase Tab -->
+            <div class="tab-panel active" id="tab-1">
+                <h2>ASK Phase: Problem Definition & Framework</h2>
+                
+                <div class="progress-section">
+                    <div class="progress-title">✅ Milestone 1 Complete</div>
+                    <div class="milestone-status">All ASK Phase Files Completed</div>
+                </div>
+
+                <div class="content-section">
+                    <h4>🎯 Problem Definition Framework</h4>
+                    <div class="content-preview" onclick="openContentFile('ask-problem-definition.txt')">
+                        <div class="file-name">Problem Definition (X→Y & PICOC Framework)</div>
+                        <div class="file-description">Healthcare worker burnout problem definition using evidence-based frameworks. Includes current state analysis, desired outcomes, and systematic problem structuring.</div>
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <h4>👥 Stakeholder Analysis</h4>
+                    <div class="content-preview" onclick="openContentFile('ask-stakeholder-analysis.txt')">
+                        <div class="file-name">Comprehensive Stakeholder Mapping</div>
+                        <div class="file-description">Internal and external stakeholders affected by healthcare burnout, including engagement strategies and evidence collection insights.</div>
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <h4>📊 Success Criteria</h4>
+                    <div class="content-preview" onclick="openContentFile('ask-success-criteria.txt')">
+                        <div class="file-name">SMART Success Criteria & Measurement Framework</div>
+                        <div class="file-description">Specific, measurable criteria for evaluating solution effectiveness, including assessment timelines and stakeholder-specific success measures.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scientific Evidence Tab -->
+            <div class="tab-panel" id="tab-2">
+                <h2>Scientific Evidence Collection & Appraisal</h2>
+                
+                <div class="content-section">
+                    <h4>🔬 Research Methods & Search Strategy</h4>
+                    <div class="content-preview" onclick="openContentFile('evidence-scientific-methods.txt')">
+                        <div class="file-name">Peterson Database Search Methods</div>
+                        <div class="file-description">Systematic search strategy using Business Source Complete and Peterson Framework techniques for evidence collection.</div>
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <h4>📚 Scientific Sources Documentation</h4>
+                    <div class="content-preview" onclick="openContentFile('evidence-scientific-sources.txt')">
+                        <div class="file-name">Peer-Reviewed Research Studies</div>
+                        <div class="file-description">Meta-analyses, systematic reviews, and individual studies on healthcare leadership and burnout reduction interventions.</div>
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <h4>⚖️ Quality Assessment</h4>
+                    <div class="content-preview" onclick="openContentFile('evidence-scientific-appraisal.txt')">
+                        <div class="file-name">Peterson Framework Evidence Evaluation</div>
+                        <div class="file-description">Critical appraisal using study design analysis, bias assessment, and evidence hierarchy evaluation.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Practitioner Evidence Tab -->
+            <div class="tab-panel" id="tab-3">
+                <h2>Practitioner Evidence & Real-World Insights</h2>
+                
+                <div class="content-section">
+                    <h4>👨‍💼 Practitioner Network Methods</h4>
+                    <div class="content-preview" onclick="openContentFile('evidence-practitioner-methods.txt')">
+                        <div class="file-name">Professional Network Strategy</div>
+                        <div class="file-description">Case study acquisition and practitioner interview methodology for gathering real-world insights.</div>
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <h4>💼 Expert Interviews & Case Studies</h4>
+                    <div class="content-preview" onclick="openContentFile('evidence-practitioner-sources.txt')">
+                        <div class="file-name">Healthcare Leadership Practitioner Insights</div>
+                        <div class="file-description">Interviews with healthcare managers and case studies of successful burnout reduction initiatives.</div>
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <h4>🔍 Credibility Assessment</h4>
+                    <div class="content-preview" onclick="openContentFile('evidence-practitioner-appraisal.txt')">
+                        <div class="file-name">Peterson 3-Dimension Evaluation</div>
+                        <div class="file-description">Critical incidents, feedback quality, and environmental consistency assessment of practitioner evidence.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Solution & Implementation Tab -->
+            <div class="tab-panel" id="tab-4">
+                <h2>Evidence-Based Solutions & Implementation</h2>
+                
+                <div class="content-section">
+                    <h4>🚀 Solution Design</h4>
+                    <div class="content-preview" onclick="openContentFile('apply-solution-design.txt')">
+                        <div class="file-name">Evidence-Based Recommendations</div>
+                        <div class="file-description">Leadership development interventions and burnout reduction strategies based on synthesized evidence.</div>
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <h4>📈 Implementation Strategy</h4>
+                    <div class="content-preview" onclick="openContentFile('apply-implementation.txt')">
+                        <div class="file-name">Implementation Plan & Resource Requirements</div>
+                        <div class="file-description">Detailed implementation strategy with timelines, resources, and stakeholder engagement plans.</div>
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <h4>📊 Assessment & Monitoring</h4>
+                    <div class="content-preview" onclick="openContentFile('assessment-monitoring.txt')">
+                        <div class="file-name">Evaluation Framework</div>
+                        <div class="file-description">Key performance indicators, monitoring systems, and success measurement protocols.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
         <!-- Sidebar Navigation -->
         <nav class="sidebar">
             <div class="logo-section">
@@ -1177,178 +1351,40 @@ Weight the evidence and form recommendations.</pre>
             });
         }
 
-        // Modern Dashboard Navigation
-        function showContent(contentId) {
-            // Hide all content sections
-            const sections = document.querySelectorAll('.content-section');
-            sections.forEach(section => section.style.display = 'none');
+    <script>
+        // Simple Tab Navigation
+        function showTab(tabNumber) {
+            // Hide all tab panels
+            const panels = document.querySelectorAll('.tab-panel');
+            panels.forEach(panel => panel.classList.remove('active'));
             
-            // Show selected content
-            const selectedSection = document.getElementById(contentId);
-            if (selectedSection) {
-                selectedSection.style.display = 'block';
-            }
+            // Remove active class from all tab buttons
+            const buttons = document.querySelectorAll('.tab-button');
+            buttons.forEach(button => button.classList.remove('active'));
             
-            // Update navigation active states
-            const navItems = document.querySelectorAll('.nav-item');
-            navItems.forEach(item => item.classList.remove('active'));
+            // Show the selected tab panel
+            document.getElementById(`tab-${tabNumber}`).classList.add('active');
             
-            // Find and activate the clicked nav item
-            const activeNav = Array.from(navItems).find(item => 
-                item.getAttribute('onclick')?.includes(contentId)
-            );
-            if (activeNav) {
-                activeNav.classList.add('active');
-            }
-            
-            // Update breadcrumb and page title
-            updatePageTitle(contentId);
-            
-            // Load content if it's a file-based section
-            if (['problem-definition', 'stakeholder-analysis', 'success-criteria'].includes(contentId)) {
-                loadFileContent(contentId);
-            }
+            // Add active class to the clicked button
+            buttons[tabNumber - 1].classList.add('active');
         }
         
-        function updatePageTitle(contentId) {
-            const titles = {
-                'ask-overview': 'ASK Phase Overview',
-                'problem-definition': 'Problem Definition',
-                'stakeholder-analysis': 'Stakeholder Analysis', 
-                'success-criteria': 'Success Criteria',
-                'evidence-overview': 'Evidence Overview',
-                'scientific-evidence': 'Scientific Evidence',
-                'practitioner-evidence': 'Practitioner Evidence',
-                'organizational-evidence': 'Organizational Evidence',
-                'stakeholder-evidence': 'Stakeholder Evidence',
-                'synthesis': 'Evidence Synthesis',
-                'solution-design': 'Solution Design',
-                'implementation': 'Implementation Plan',
-                'assessment': 'Assessment Plan'
-            };
-            
-            const pageTitle = document.getElementById('page-title');
-            const currentPage = document.getElementById('current-page');
-            
-            if (pageTitle && titles[contentId]) {
-                pageTitle.textContent = titles[contentId];
-            }
-            if (currentPage && titles[contentId]) {
-                currentPage.textContent = titles[contentId];
-            }
-        }
-        
-        async function loadFileContent(contentId) {
-            const fileMap = {
-                'problem-definition': 'ask-problem-definition.txt',
-                'stakeholder-analysis': 'ask-stakeholder-analysis.txt', 
-                'success-criteria': 'ask-success-criteria.txt'
-            };
-            
-            const filename = fileMap[contentId];
-            if (!filename) return;
-            
-            const contentDiv = document.getElementById(`${contentId}-content`);
-            if (!contentDiv) return;
-            
-            try {
-                // In a real implementation, this would fetch the file content
-                // For now, show a preview message
-                contentDiv.innerHTML = `
-                    <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--accent-blue);">
-                        <h4>📁 ${filename}</h4>
-                        <p>Content preview would appear here. Click "Edit in VS Code" to view and modify the full content.</p>
-                        <div style="margin-top: 1rem;">
-                            <strong>Word Count:</strong> <span style="color: var(--success-green);">Estimated 400-500 words</span><br>
-                            <strong>Framework Compliance:</strong> <span style="color: var(--success-green);">✓ Complete</span><br>
-                            <strong>Last Modified:</strong> October 5, 2025
-                        </div>
-                    </div>
-                `;
-            } catch (error) {
-                contentDiv.innerHTML = `
-                    <div style="background: #fff3cd; padding: 1rem; border-radius: 4px; border-left: 4px solid var(--warning-amber);">
-                        <strong>⚠️ File not found:</strong> ${filename}<br>
-                        <small>Click "Edit in VS Code" to create this file.</small>
-                    </div>
-                `;
-            }
-        }
-        
+        // File opening function (simplified)
         function openContentFile(filename) {
-            // In VS Code, this would actually open the file
-            // For demo purposes, show an informative message
-            const message = `Opening ${filename} in VS Code...
+            const message = `📝 Opening ${filename}
             
-📝 This file contains your evidence-based management content.
-🤖 Use GitHub Copilot to help with writing and analysis.
-📊 Ensure compliance with Peterson Framework requirements.
-💼 This content contributes to your professional portfolio.`;
+This file contains your EBM content. In VS Code, you would edit this file directly.
+            
+✅ File completed and ready for review
+📊 Content aligns with Peterson Framework requirements`;
             
             alert(message);
-            
-            // In a real VS Code extension, this would execute:
-            // vscode.workspace.openTextDocument(filename).then(doc => {
-            //     vscode.window.showTextDocument(doc);
-            // });
-        }
-        
-        // Progress tracking
-        function updateProgress() {
-            const completedFiles = ['ask-problem-definition.txt', 'ask-stakeholder-analysis.txt', 'ask-success-criteria.txt'];
-            const totalMilestone1Files = 3;
-            const progressPercent = (completedFiles.length / totalMilestone1Files) * 100;
-            
-            const progressFill = document.querySelector('.progress-fill');
-            if (progressFill) {
-                progressFill.style.width = `${progressPercent}%`;
-            }
-        }
-        
-        // Interactive features
-        function toggleFileStatus(filename) {
-            // This would toggle completion status for files
-            console.log(`Toggling status for ${filename}`);
-            updateProgress();
         }
         
         // Initialize dashboard
         document.addEventListener('DOMContentLoaded', function() {
-            // Set default view
-            showContent('ask-overview');
-            updateProgress();
-            
-            // Add smooth scrolling to all anchor links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const target = document.querySelector(this.getAttribute('href'));
-                    if (target) {
-                        target.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                    }
-                });
-            });
-        });
-        
-        // Keyboard shortcuts
-        document.addEventListener('keydown', function(e) {
-            // Alt + 1-9 for quick navigation
-            if (e.altKey && e.key >= '1' && e.key <= '9') {
-                e.preventDefault();
-                const shortcuts = {
-                    '1': 'ask-overview',
-                    '2': 'problem-definition',
-                    '3': 'stakeholder-analysis',
-                    '4': 'success-criteria',
-                    '5': 'evidence-overview'
-                };
-                if (shortcuts[e.key]) {
-                    showContent(shortcuts[e.key]);
-                }
-            }
+            // Set default tab active
+            showTab(1);
         });
     </script>
     <script src="content-loader.js"></script>
