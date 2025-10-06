@@ -3,7 +3,16 @@ Post-COVID healthcare organizations face widespread employee burnout with insuff
 
 ## X → Y Framework
 ### Current State (X - What's happening now that's problematic?)
-US healthcare organizations are experiencing elevated employee burnout rates among healthcare workers following COVID-19. This burnout is manifesting as increased emotional exhaustion, depersonalization, and reduced personal accomplishment, leading to high turnover rates, decreased job satisfaction, and compromised patient care quality. Many healthcare organizations lack effective leadership strategies to address and prevent burnout among their staff.
+US healthcare organizations are experiencing elevated employee burnout rates among healthcare workers following COVID-19. Key metrics include:
+
+- Increased emotional exhaustion among healthcare workers
+- Rising depersonalization in patient care interactions
+- Reduced personal accomplishment and job satisfaction
+- High turnover rates across healthcare positions
+- Decreased overall job satisfaction scores
+- Compromised patient care quality indicators
+- Insufficient leadership strategies to address burnout
+- Lack of effective burnout prevention programs
 
 ### Desired State (Y - What outcome do we want to achieve?)
 Healthcare organizations implement evidence-based leadership development interventions that effectively reduce employee burnout levels and demonstrate measurable improvements in employee retention and job satisfaction among healthcare workers.
@@ -91,7 +100,14 @@ This problem directly impacts healthcare organizational priorities:
 ## Current Situation and Desired Outcomes
 
 ### Current Situation
-Healthcare organizations are experiencing unsustainable levels of healthcare worker burnout with insufficient leadership strategies to address the root causes. Current approaches often treat symptoms rather than underlying organizational and leadership factors contributing to burnout.
+Healthcare organizations are experiencing unsustainable levels of healthcare worker burnout with insufficient leadership strategies to address the root causes. Current situation indicators:
+
+- Unsustainable levels of healthcare worker burnout across departments
+- Insufficient leadership strategies to address root causes
+- Reactive approaches that treat symptoms rather than underlying factors
+- Limited organizational leadership development focused on burnout prevention
+- Inadequate systematic approaches to leadership-based burnout reduction
+- Poor integration of leadership practices with employee wellbeing initiatives
 
 ### Desired Outcomes
 Implementation of evidence-based leadership interventions that systematically reduce healthcare worker burnout, improve retention rates, and create sustainable organizational cultures supporting both employee wellbeing and high-quality patient care.
