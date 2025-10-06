@@ -3,17 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My EBM Dashboard | MGT357 - Fall 2025</title>
+    <title>Evidence-Based Management Portfolio | MGT357</title>
     <style>
-        /* === CSS CUSTOM PROPERTIES === */
+        /* === MODERN PROFESSIONAL DESIGN === */
         :root {
-            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            --tab-active: #2ecc71;
-            --tab-inactive: #95a5a6;
-            --step-green: #27ae60;
-            --step-blue: #3498db;
-            --border-radius: 15px;
-            --transition-speed: 0.3s;
+            --primary-dark: #2C3E50;
+            --primary-light: #FAFAFA;
+            --accent-blue: #4A90E2;
+            --success-green: #27AE60;
+            --warning-amber: #F39C12;
+            --text-primary: #2C3E50;
+            --text-secondary: #7F8C8D;
+            --border-light: #E8ECEF;
+            --shadow-soft: 0 2px 20px rgba(44, 62, 80, 0.1);
+            --shadow-medium: 0 4px 30px rgba(44, 62, 80, 0.15);
+            --border-radius: 8px;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         * {
@@ -23,83 +28,382 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: var(--primary-gradient);
-            min-height: 100vh;
-            padding: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: var(--primary-light);
+            color: var(--text-primary);
+            line-height: 1.6;
+            font-size: 16px;
         }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
+        .dashboard-container {
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            min-height: 100vh;
+            background: white;
+        }
+
+        /* === SIDEBAR NAVIGATION === */
+        .sidebar {
+            background: var(--primary-dark);
+            color: white;
+            padding: 2rem 0;
+            position: fixed;
+            width: 280px;
+            height: 100vh;
+            overflow-y: auto;
+            z-index: 100;
+        }
+
+        .logo-section {
+            padding: 0 2rem 2rem 2rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        .logo-section h1 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .logo-section p {
+            font-size: 0.9rem;
+            opacity: 0.7;
+            font-weight: 300;
+        }
+
+        .nav-section {
+            margin-bottom: 2rem;
+        }
+
+        .nav-title {
+            padding: 0 2rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            opacity: 0.6;
+            margin-bottom: 1rem;
+        }
+
+        .nav-item {
+            display: block;
+            padding: 0.75rem 2rem;
+            color: white;
+            text-decoration: none;
+            transition: var(--transition);
+            border-left: 3px solid transparent;
+            position: relative;
+        }
+
+        .nav-item:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-left-color: var(--accent-blue);
+        }
+
+        .nav-item.active {
+            background: rgba(74, 144, 226, 0.2);
+            border-left-color: var(--accent-blue);
+        }
+
+        .nav-item.completed::after {
+            content: '✓';
+            position: absolute;
+            right: 2rem;
+            color: var(--success-green);
+            font-weight: bold;
+        }
+
+        .milestone-progress {
+            padding: 1rem 2rem;
+            background: rgba(255, 255, 255, 0.05);
+            margin: 1rem;
+            border-radius: var(--border-radius);
+        }
+
+        .progress-bar {
+            height: 4px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 2px;
+            overflow: hidden;
+            margin-top: 0.5rem;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: var(--success-green);
+            transition: var(--transition);
+            width: 25%;
+        }
+
+        /* === MAIN CONTENT AREA === */
+        .main-content {
+            margin-left: 280px;
+            background: var(--primary-light);
+            min-height: 100vh;
+        }
+
+        .top-nav {
+            background: white;
+            padding: 1.5rem 2rem;
+            border-bottom: 1px solid var(--border-light);
+            box-shadow: var(--shadow-soft);
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .page-title {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .content-area {
+            padding: 2rem;
+        }
+
+        /* === CARD COMPONENTS === */
+        .card {
             background: white;
             border-radius: var(--border-radius);
-            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+            box-shadow: var(--shadow-soft);
+            margin-bottom: 1.5rem;
             overflow: hidden;
+            transition: var(--transition);
         }
 
-        .header {
-            background: linear-gradient(135deg, #2c3e50, #3498db);
-            color: white;
-            padding: 30px;
-            text-align: center;
-        }
-
-        .header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-
-        .header p {
-            font-size: 1.2em;
-            opacity: 0.9;
-        }
-
-        .student-info {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 15px;
-            margin-top: 20px;
-            border-radius: 10px;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-            font-size: 0.9em;
-        }
-
-        /* === SIMPLE TAB SYSTEM === */
-        .tab-nav {
-            display: flex;
-            background: #ecf0f1;
-            border-bottom: 3px solid #bdc3c7;
-        }
-
-        .tab-button {
-            flex: 1;
-            padding: 20px;
-            text-align: center;
-            cursor: pointer;
-            background: var(--tab-inactive);
-            color: white;
-            font-weight: bold;
-            font-size: 1.1em;
-            transition: all var(--transition-speed);
-            border: none;
-            border-right: 2px solid white;
-        }
-
-        .tab-button:last-child {
-            border-right: none;
-        }
-
-        .tab-button:hover {
-            background: #7f8c8d;
+        .card:hover {
+            box-shadow: var(--shadow-medium);
             transform: translateY(-2px);
         }
 
-        .tab-button.active {
-            background: var(--tab-active);
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(46, 204, 113, 0.3);
+        .card-header {
+            padding: 1.5rem;
+            border-bottom: 1px solid var(--border-light);
+            background: var(--primary-light);
+        }
+
+        .card-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .card-subtitle {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .card-body {
+            padding: 1.5rem;
+        }
+
+        .card-actions {
+            padding: 1rem 1.5rem;
+            background: var(--primary-light);
+            border-top: 1px solid var(--border-light);
+            display: flex;
+            gap: 1rem;
+        }
+
+        /* === INTERACTIVE ELEMENTS === */
+        .btn {
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: var(--border-radius);
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-primary {
+            background: var(--accent-blue);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #3A7BD5;
+            transform: translateY(-1px);
+        }
+
+        .btn-secondary {
+            background: var(--text-secondary);
+            color: white;
+        }
+
+        .btn-success {
+            background: var(--success-green);
+            color: white;
+        }
+
+        .progress-indicator {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .progress-circle {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            font-weight: bold;
+        }
+
+        .progress-circle.completed {
+            background: var(--success-green);
+            color: white;
+        }
+
+        .progress-circle.in-progress {
+            background: var(--warning-amber);
+            color: white;
+        }
+
+        .progress-circle.not-started {
+            background: var(--border-light);
+            color: var(--text-secondary);
+        }
+
+        /* === EVIDENCE QUALITY INDICATORS === */
+        .quality-meter {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .quality-bar {
+            flex: 1;
+            height: 8px;
+            background: var(--border-light);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .quality-fill {
+            height: 100%;
+            transition: var(--transition);
+        }
+
+        .quality-fill.high { background: var(--success-green); }
+        .quality-fill.medium { background: var(--warning-amber); }
+        .quality-fill.low { background: #E74C3C; }
+
+        .quality-label {
+            font-size: 0.8rem;
+            font-weight: 600;
+            min-width: 60px;
+        }
+
+        /* === MILESTONE GRID === */
+        .milestone-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .milestone-card {
+            background: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-soft);
+            overflow: hidden;
+            transition: var(--transition);
+        }
+
+        .milestone-card:hover {
+            box-shadow: var(--shadow-medium);
+            transform: translateY(-2px);
+        }
+
+        .milestone-header {
+            padding: 1.5rem;
+            background: linear-gradient(135deg, var(--accent-blue), #3A7BD5);
+            color: white;
+        }
+
+        .milestone-number {
+            font-size: 2rem;
+            font-weight: 700;
+            opacity: 0.8;
+        }
+
+        .milestone-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin: 0.5rem 0;
+        }
+
+        .milestone-due {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .file-list {
+            padding: 1.5rem;
+        }
+
+        .file-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .file-item:last-child {
+            border-bottom: none;
+        }
+
+        .file-name {
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .file-status {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* === RESPONSIVE DESIGN === */
+        @media (max-width: 768px) {
+            .dashboard-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .sidebar {
+                display: none;
+            }
+            
+            .main-content {
+                margin-left: 0;
+            }
+            
+            .milestone-grid {
+                grid-template-columns: 1fr;
+            }
         }
 
         .tab-content {
@@ -340,50 +644,258 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>🎯 My Evidence-Based Management Dashboard</h1>
-            <p>MGT357 - Fall 2025 | Portfolio Project</p>
-            
-            <div class="student-info">
-                <div><strong>Student:</strong> [Dr. Peterson]</div>
-                <div><strong>Problem Focus:</strong> [Leadership Training]</div>
-                <div><strong>Repository:</strong> <a href="#" style="color: #74b9ff;">[Your GitHub Link]</a></div>
-                <div><strong>Last Updated:</strong> [16 Sep 2025]</div>
-            </div>
-        </div>
-
-        <!-- Persistent Progress Indicator -->
-        <div class="progress-indicator">
-            <div class="progress-step pending" onclick="showTab(1)">🎯 Framework</div>
-            <div class="progress-step pending" onclick="showTab(2)">🔍 Evidence</div>
-            <div class="progress-step pending" onclick="showTab(3)">⚖️ Synthesis</div>
-            <div class="progress-step pending" onclick="showTab(4)">🚀 Application</div>
-            <div class="progress-step pending" onclick="showTab(5)">📊 Assessment</div>
-        </div>
-
-        <div class="tab-container">
-            <!-- Tab Navigation -->
-            <div class="tab-nav">
-                <button class="tab-button active" onclick="showTab(1)">🎯 Problem & Solution Framework</button>
-                <button class="tab-button" onclick="showTab(2)">🔍 Evidence Hub</button>
-                <button class="tab-button" onclick="showTab(3)">⚖️ Aggregation</button>
-                <button class="tab-button" onclick="showTab(4)">🚀 Application</button>
-                <button class="tab-button" onclick="showTab(5)">📊 Assessment</button>
+    <div class="dashboard-container">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar">
+            <div class="logo-section">
+                <h1>🎯 EBM Portfolio</h1>
+                <p>MGT357 - Fall 2025</p>
             </div>
 
-            <!-- Tab Content -->
-            <div class="tab-content">
-                <!-- TAB 1: Problem & Solution Framework -->
-                <div class="tab-panel active" id="tab-1">
-                    <h2>🎯 Problem & Solution Framework</h2>
-                    <p><strong>Following Module 2 Flowchart:</strong> Define the problem AND identify the preferred solution before collecting evidence.</p>
-                    
-                    <div class="milestone-tracker">
-                        <h4>📋 Milestone 1 Checklist (Due: Week 3)</h4>
-                        <ul class="checklist">
-                            <li>GitHub repository created and dashboard running</li>
-                            <li>Problem Definition completed using frameworks</li>
+            <div class="nav-section">
+                <div class="nav-title">ASK Phase</div>
+                <a href="#" class="nav-item active" onclick="showContent('ask-overview')">
+                    📋 Phase Overview
+                </a>
+                <a href="#" class="nav-item completed" onclick="showContent('problem-definition')">
+                    🎯 Problem Definition
+                </a>
+                <a href="#" class="nav-item completed" onclick="showContent('stakeholder-analysis')">
+                    👥 Stakeholder Analysis
+                </a>
+                <a href="#" class="nav-item completed" onclick="showContent('success-criteria')">
+                    📊 Success Criteria
+                </a>
+            </div>
+
+            <div class="nav-section">
+                <div class="nav-title">ACQUIRE Phase</div>
+                <a href="#" class="nav-item" onclick="showContent('evidence-overview')">
+                    🔍 Evidence Overview
+                </a>
+                <a href="#" class="nav-item" onclick="showContent('scientific-evidence')">
+                    🔬 Scientific Evidence
+                </a>
+                <a href="#" class="nav-item" onclick="showContent('practitioner-evidence')">
+                    👨‍💼 Practitioner Evidence
+                </a>
+                <a href="#" class="nav-item" onclick="showContent('organizational-evidence')">
+                    🏢 Organizational Evidence
+                </a>
+                <a href="#" class="nav-item" onclick="showContent('stakeholder-evidence')">
+                    🗣️ Stakeholder Evidence
+                </a>
+            </div>
+
+            <div class="nav-section">
+                <div class="nav-title">APPRAISE & APPLY</div>
+                <a href="#" class="nav-item" onclick="showContent('synthesis')">
+                    ⚖️ Evidence Synthesis
+                </a>
+                <a href="#" class="nav-item" onclick="showContent('solution-design')">
+                    🚀 Solution Design
+                </a>
+                <a href="#" class="nav-item" onclick="showContent('implementation')">
+                    📈 Implementation
+                </a>
+                <a href="#" class="nav-item" onclick="showContent('assessment')">
+                    📊 Assessment Plan
+                </a>
+            </div>
+
+            <div class="milestone-progress">
+                <div style="font-size: 0.8rem; font-weight: 600; margin-bottom: 0.5rem;">Overall Progress</div>
+                <div style="font-size: 0.9rem; margin-bottom: 0.5rem;">Milestone 1: Complete</div>
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <header class="top-nav">
+                <div class="breadcrumb">
+                    <span>EBM Portfolio</span>
+                    <span>›</span>
+                    <span>ASK Phase</span>
+                    <span>›</span>
+                    <span id="current-page">Overview</span>
+                </div>
+                <h1 class="page-title" id="page-title">ASK Phase Overview</h1>
+            </header>
+
+            <div class="content-area" id="main-content">
+                <!-- ASK Phase Overview -->
+                <div id="ask-overview" class="content-section">
+                    <div class="milestone-grid">
+                        <div class="milestone-card">
+                            <div class="milestone-header">
+                                <div class="milestone-number">M1</div>
+                                <div class="milestone-title">ASK Phase Complete</div>
+                                <div class="milestone-due">Due: October 4, 2025</div>
+                            </div>
+                            <div class="file-list">
+                                <div class="file-item">
+                                    <div class="file-name">Problem Definition</div>
+                                    <div class="file-status">
+                                        <div class="progress-circle completed">✓</div>
+                                        <button class="btn btn-primary" onclick="openContentFile('ask-problem-definition.txt')">Edit</button>
+                                    </div>
+                                </div>
+                                <div class="file-item">
+                                    <div class="file-name">Stakeholder Analysis</div>
+                                    <div class="file-status">
+                                        <div class="progress-circle completed">✓</div>
+                                        <button class="btn btn-primary" onclick="openContentFile('ask-stakeholder-analysis.txt')">Edit</button>
+                                    </div>
+                                </div>
+                                <div class="file-item">
+                                    <div class="file-name">Success Criteria</div>
+                                    <div class="file-status">
+                                        <div class="progress-circle completed">✓</div>
+                                        <button class="btn btn-primary" onclick="openContentFile('ask-success-criteria.txt')">Edit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="milestone-card">
+                            <div class="milestone-header" style="background: linear-gradient(135deg, var(--warning-amber), #E67E22);">
+                                <div class="milestone-number">M2</div>
+                                <div class="milestone-title">Scientific Evidence</div>
+                                <div class="milestone-due">Due: October 18, 2025</div>
+                            </div>
+                            <div class="file-list">
+                                <div class="file-item">
+                                    <div class="file-name">Search Methods</div>
+                                    <div class="file-status">
+                                        <div class="progress-circle in-progress">⏳</div>
+                                        <button class="btn btn-secondary" onclick="openContentFile('evidence-scientific-methods.txt')">Edit</button>
+                                    </div>
+                                </div>
+                                <div class="file-item">
+                                    <div class="file-name">Sources Documentation</div>
+                                    <div class="file-status">
+                                        <div class="progress-circle not-started">○</div>
+                                        <button class="btn btn-secondary" onclick="openContentFile('evidence-scientific-sources.txt')">Edit</button>
+                                    </div>
+                                </div>
+                                <div class="file-item">
+                                    <div class="file-name">Quality Appraisal</div>
+                                    <div class="file-status">
+                                        <div class="progress-circle not-started">○</div>
+                                        <button class="btn btn-secondary" onclick="openContentFile('evidence-scientific-appraisal.txt')">Edit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title">🎯 Problem Focus: Healthcare Worker Burnout</div>
+                            <div class="card-subtitle">Leadership interventions to reduce burnout and improve retention</div>
+                        </div>
+                        <div class="card-body">
+                            <p><strong>Current Problem:</strong> US healthcare organizations are experiencing elevated employee burnout among healthcare workers following COVID-19, with insufficient leadership strategies to address this crisis.</p>
+                            
+                            <p><strong>Desired Outcome:</strong> Healthcare organizations implement evidence-based leadership development interventions that effectively reduce employee burnout levels and demonstrate measurable improvements in employee retention and job satisfaction.</p>
+
+                            <div class="quality-meter">
+                                <span class="quality-label">Framework Quality:</span>
+                                <div class="quality-bar">
+                                    <div class="quality-fill high" style="width: 90%;"></div>
+                                </div>
+                                <span style="font-size: 0.8rem; color: var(--success-green); font-weight: 600;">Excellent</span>
+                            </div>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-primary" onclick="showContent('problem-definition')">View Details</button>
+                            <button class="btn btn-secondary" onclick="openContentFile('ask-problem-definition.txt')">Edit File</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title">📈 Next Steps</div>
+                        </div>
+                        <div class="card-body">
+                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+                                <div>
+                                    <strong>🔬 Scientific Evidence</strong><br>
+                                    <small>Search peer-reviewed studies on leadership interventions for healthcare burnout</small>
+                                </div>
+                                <div>
+                                    <strong>👨‍💼 Practitioner Evidence</strong><br>
+                                    <small>Interview healthcare leaders about successful burnout reduction strategies</small>
+                                </div>
+                                <div>
+                                    <strong>🏢 Organizational Evidence</strong><br>
+                                    <small>Analyze internal data on burnout trends and leadership effectiveness</small>
+                                </div>
+                                <div>
+                                    <strong>🗣️ Stakeholder Evidence</strong><br>
+                                    <small>Gather input from healthcare workers, patients, and managers</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Problem Definition Content -->
+                <div id="problem-definition" class="content-section" style="display: none;">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title">🎯 Problem Definition Framework</div>
+                            <div class="card-subtitle">X→Y and PICOC Framework Application</div>
+                        </div>
+                        <div class="card-body">
+                            <div id="problem-definition-content">Loading content...</div>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-primary" onclick="openContentFile('ask-problem-definition.txt')">📝 Edit in VS Code</button>
+                            <button class="btn btn-secondary" onclick="showContent('ask-overview')">← Back to Overview</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stakeholder Analysis Content -->
+                <div id="stakeholder-analysis" class="content-section" style="display: none;">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title">👥 Stakeholder Analysis</div>
+                            <div class="card-subtitle">Comprehensive stakeholder mapping and engagement strategy</div>
+                        </div>
+                        <div class="card-body">
+                            <div id="stakeholder-analysis-content">Loading content...</div>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-primary" onclick="openContentFile('ask-stakeholder-analysis.txt')">📝 Edit in VS Code</button>
+                            <button class="btn btn-secondary" onclick="showContent('ask-overview')">← Back to Overview</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Success Criteria Content -->
+                <div id="success-criteria" class="content-section" style="display: none;">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title">📊 Success Criteria Definition</div>
+                            <div class="card-subtitle">SMART criteria and measurement framework</div>
+                        </div>
+                        <div class="card-body">
+                            <div id="success-criteria-content">Loading content...</div>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-primary" onclick="openContentFile('ask-success-criteria.txt')">📝 Edit in VS Code</button>
+                            <button class="btn btn-secondary" onclick="showContent('ask-overview')">← Back to Overview</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
                             <li>Stakeholder Analysis documented</li>
                             <li>Success Criteria clearly defined</li>
                             <li>Progress tracker updated</li>
@@ -421,24 +933,14 @@ Define specific, measurable criteria for success.
 How will you know if your evidence-based solution worked?</pre>
                     </div>
 
-                    <div class="flowchart-step">
-                        STEP 2: ASK - What is the evidence for the assumed problem?
-                    </div>
-
-                    <div class="flowchart-step">
-                        STEP 3: ASK - What is the preferred solution?
-                    </div>
-
-                    <div class="flowchart-step">
-                        STEP 4: ASK - What is the evidence for the preferred solution?
-                    </div>
-
-                    <p><strong>Next Phase:</strong> Now that we have our problem framework defined, we move to the Evidence Hub to systematically collect and evaluate evidence from all four sources to answer Steps 2 & 4.</p>
                 </div>
-
-                <!-- TAB 2: Evidence Hub -->
-                <div class="tab-panel" id="tab-2">
-                    <h2>🔍 Evidence Hub</h2>
+            </div>
+        </main>
+    </div>
+                </div>
+            </div>
+        </main>
+    </div>
                     <p><strong>Purpose:</strong> Systematically collect and critically evaluate evidence from all four sources.</p>
 
                     <div class="milestone-tracker">
@@ -675,10 +1177,178 @@ Weight the evidence and form recommendations.</pre>
             });
         }
 
+        // Modern Dashboard Navigation
+        function showContent(contentId) {
+            // Hide all content sections
+            const sections = document.querySelectorAll('.content-section');
+            sections.forEach(section => section.style.display = 'none');
+            
+            // Show selected content
+            const selectedSection = document.getElementById(contentId);
+            if (selectedSection) {
+                selectedSection.style.display = 'block';
+            }
+            
+            // Update navigation active states
+            const navItems = document.querySelectorAll('.nav-item');
+            navItems.forEach(item => item.classList.remove('active'));
+            
+            // Find and activate the clicked nav item
+            const activeNav = Array.from(navItems).find(item => 
+                item.getAttribute('onclick')?.includes(contentId)
+            );
+            if (activeNav) {
+                activeNav.classList.add('active');
+            }
+            
+            // Update breadcrumb and page title
+            updatePageTitle(contentId);
+            
+            // Load content if it's a file-based section
+            if (['problem-definition', 'stakeholder-analysis', 'success-criteria'].includes(contentId)) {
+                loadFileContent(contentId);
+            }
+        }
+        
+        function updatePageTitle(contentId) {
+            const titles = {
+                'ask-overview': 'ASK Phase Overview',
+                'problem-definition': 'Problem Definition',
+                'stakeholder-analysis': 'Stakeholder Analysis', 
+                'success-criteria': 'Success Criteria',
+                'evidence-overview': 'Evidence Overview',
+                'scientific-evidence': 'Scientific Evidence',
+                'practitioner-evidence': 'Practitioner Evidence',
+                'organizational-evidence': 'Organizational Evidence',
+                'stakeholder-evidence': 'Stakeholder Evidence',
+                'synthesis': 'Evidence Synthesis',
+                'solution-design': 'Solution Design',
+                'implementation': 'Implementation Plan',
+                'assessment': 'Assessment Plan'
+            };
+            
+            const pageTitle = document.getElementById('page-title');
+            const currentPage = document.getElementById('current-page');
+            
+            if (pageTitle && titles[contentId]) {
+                pageTitle.textContent = titles[contentId];
+            }
+            if (currentPage && titles[contentId]) {
+                currentPage.textContent = titles[contentId];
+            }
+        }
+        
+        async function loadFileContent(contentId) {
+            const fileMap = {
+                'problem-definition': 'ask-problem-definition.txt',
+                'stakeholder-analysis': 'ask-stakeholder-analysis.txt', 
+                'success-criteria': 'ask-success-criteria.txt'
+            };
+            
+            const filename = fileMap[contentId];
+            if (!filename) return;
+            
+            const contentDiv = document.getElementById(`${contentId}-content`);
+            if (!contentDiv) return;
+            
+            try {
+                // In a real implementation, this would fetch the file content
+                // For now, show a preview message
+                contentDiv.innerHTML = `
+                    <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--accent-blue);">
+                        <h4>📁 ${filename}</h4>
+                        <p>Content preview would appear here. Click "Edit in VS Code" to view and modify the full content.</p>
+                        <div style="margin-top: 1rem;">
+                            <strong>Word Count:</strong> <span style="color: var(--success-green);">Estimated 400-500 words</span><br>
+                            <strong>Framework Compliance:</strong> <span style="color: var(--success-green);">✓ Complete</span><br>
+                            <strong>Last Modified:</strong> October 5, 2025
+                        </div>
+                    </div>
+                `;
+            } catch (error) {
+                contentDiv.innerHTML = `
+                    <div style="background: #fff3cd; padding: 1rem; border-radius: 4px; border-left: 4px solid var(--warning-amber);">
+                        <strong>⚠️ File not found:</strong> ${filename}<br>
+                        <small>Click "Edit in VS Code" to create this file.</small>
+                    </div>
+                `;
+            }
+        }
+        
+        function openContentFile(filename) {
+            // In VS Code, this would actually open the file
+            // For demo purposes, show an informative message
+            const message = `Opening ${filename} in VS Code...
+            
+📝 This file contains your evidence-based management content.
+🤖 Use GitHub Copilot to help with writing and analysis.
+📊 Ensure compliance with Peterson Framework requirements.
+💼 This content contributes to your professional portfolio.`;
+            
+            alert(message);
+            
+            // In a real VS Code extension, this would execute:
+            // vscode.workspace.openTextDocument(filename).then(doc => {
+            //     vscode.window.showTextDocument(doc);
+            // });
+        }
+        
+        // Progress tracking
+        function updateProgress() {
+            const completedFiles = ['ask-problem-definition.txt', 'ask-stakeholder-analysis.txt', 'ask-success-criteria.txt'];
+            const totalMilestone1Files = 3;
+            const progressPercent = (completedFiles.length / totalMilestone1Files) * 100;
+            
+            const progressFill = document.querySelector('.progress-fill');
+            if (progressFill) {
+                progressFill.style.width = `${progressPercent}%`;
+            }
+        }
+        
+        // Interactive features
+        function toggleFileStatus(filename) {
+            // This would toggle completion status for files
+            console.log(`Toggling status for ${filename}`);
+            updateProgress();
+        }
+        
         // Initialize dashboard
         document.addEventListener('DOMContentLoaded', function() {
-            loadContentFiles();
-            updateProgressIndicator(1);
+            // Set default view
+            showContent('ask-overview');
+            updateProgress();
+            
+            // Add smooth scrolling to all anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+        
+        // Keyboard shortcuts
+        document.addEventListener('keydown', function(e) {
+            // Alt + 1-9 for quick navigation
+            if (e.altKey && e.key >= '1' && e.key <= '9') {
+                e.preventDefault();
+                const shortcuts = {
+                    '1': 'ask-overview',
+                    '2': 'problem-definition',
+                    '3': 'stakeholder-analysis',
+                    '4': 'success-criteria',
+                    '5': 'evidence-overview'
+                };
+                if (shortcuts[e.key]) {
+                    showContent(shortcuts[e.key]);
+                }
+            }
         });
     </script>
     <script src="content-loader.js"></script>

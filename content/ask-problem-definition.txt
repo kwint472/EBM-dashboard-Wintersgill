@@ -1,5 +1,5 @@
-# Problem Definition Framework - all claude
-United States organizations are experiencing elevated post-COVID-19 employee burnout among healthcare/essential workers and remote employees, resulting in decreased retention, engagement, and performance. 
+# Problem Definition Framework
+Post-COVID healthcare organizations face widespread employee burnout with insufficient leadership strategies to address escalating turnover and declining care quality
 
 ## X → Y Framework
 ### Current State (X - What's happening now that's problematic?)
@@ -12,7 +12,6 @@ Healthcare organizations implement evidence-based leadership development interve
 ### Population (P - Who is affected by this problem?)
 - **Primary:** Healthcare workers (nurses, physicians, support staff) in US healthcare organizations
 - **Secondary:** Healthcare managers and supervisors who lead these teams
-- **Context:** Adult healthcare professionals working in hospitals, clinics, and healthcare systems post-COVID-19
 
 ### Intervention (I - What solution/action are we considering?)
 **Leadership Development Interventions:**
@@ -29,8 +28,8 @@ Healthcare organizations implement evidence-based leadership development interve
 
 ### Outcomes (O - What will success look like?)
 **Primary Outcomes:**
-- **Reduced burnout levels** measured by Maslach Burnout Inventory (MBI) scores
-- **Improved retention rates** with target of 15-20% reduction in healthcare worker turnover
+- **Reduced burnout levels** measured by validated burnout assessment tools
+- **Improved retention rates** with meaningful reduction in healthcare worker turnover
 - **Enhanced job satisfaction** measured by validated job satisfaction surveys
 
 **Secondary Outcomes:**
@@ -51,10 +50,10 @@ Healthcare organizations implement evidence-based leadership development interve
 ## Why This Problem Matters
 ### Impact on Healthcare Organizations
 **Financial Impact:**
-- Healthcare worker turnover costs $40,000-$100,000 per nurse and $250,000+ per physician
+- Healthcare worker turnover creates substantial recruitment and training costs
 - Decreased productivity and quality of patient care
-- Increased recruitment, training, and onboarding costs
-- Higher use of expensive temporary staffing
+- Increased operational expenses and staffing challenges
+- Higher reliance on temporary staffing solutions
 
 **Operational Impact:**
 - Critical nursing and physician shortages affecting patient care capacity
@@ -89,23 +88,25 @@ This problem directly impacts healthcare organizational priorities:
 - **Organizational Resilience:** Building capacity to handle future healthcare crises
 - **Community Responsibility:** Ensuring adequate healthcare access for the population served
 
+## Current Situation and Desired Outcomes
+
+### Current Situation
+Healthcare organizations are experiencing unsustainable levels of healthcare worker burnout with insufficient leadership strategies to address the root causes. Current approaches often treat symptoms rather than underlying organizational and leadership factors contributing to burnout.
+
+### Desired Outcomes
+Implementation of evidence-based leadership interventions that systematically reduce healthcare worker burnout, improve retention rates, and create sustainable organizational cultures supporting both employee wellbeing and high-quality patient care.
+
 ## Evidence Questions to Explore
-### For the Problem (Step 2)
+### For the Problem
 - What evidence shows elevated burnout rates among US healthcare workers post-COVID-19?
 - What are the documented impacts of healthcare worker burnout on retention and patient care?
 - What role does leadership quality play in healthcare worker burnout levels?
 - What specific leadership factors contribute to or prevent burnout in healthcare settings?
 
-### For the Solution (Step 4)
+### For the Solution
 - What evidence supports the effectiveness of leadership development interventions in reducing healthcare worker burnout?
 - Which leadership styles and practices show the strongest impact on burnout reduction?
 - What is the ROI and implementation feasibility of leadership development programs in healthcare?
 - How do leadership interventions compare to other burnout reduction strategies in healthcare settings?
 
----
-INSTRUCTIONS: 
-1. Replace all bracketed placeholders with your specific content
-2. Use GitHub Copilot to help with writing and organization
-3. Reference Module 2 content for framework guidance
-4. Save frequently and commit to GitHub
 
