@@ -800,9 +800,9 @@
                 .replace(/\*\*(.*?)\*\*/g, '<strong style="color: #2c3e50; font-weight: 700;">$1</strong>')
                 .replace(/\*(.*?)\*/g, '<em style="color: #6c757d; font-style: italic;">$1</em>')
                 
-                // Clean list formatting
-                .replace(/^- (.*$)/gim, '<div style="margin: 0.5rem 0; padding: 0.5rem; border-left: 3px solid #3498db;"><span style="color: #3498db; margin-right: 0.5rem;">•</span>$1</div>')
-                .replace(/^(\d+)\. (.*$)/gim, '<div style="margin: 0.5rem 0; padding: 0.5rem; border-left: 3px solid #e74c3c;"><span style="color: #e74c3c; margin-right: 0.5rem;">$1.</span>$2</div>')
+                // Clean list formatting - more condensed
+                .replace(/^- (.*$)/gim, '<div style="margin: 0.2rem 0; padding: 0.3rem; border-left: 3px solid #3498db;"><span style="color: #3498db; margin-right: 0.5rem;">•</span>$1</div>')
+                .replace(/^(\d+)\. (.*$)/gim, '<div style="margin: 0.2rem 0; padding: 0.3rem; border-left: 3px solid #e74c3c;"><span style="color: #e74c3c; margin-right: 0.5rem;">$1.</span>$2</div>')
                 
                 // Convert line breaks
                 .replace(/\n\n/g, '<div style="margin: 1rem 0;"></div>')
