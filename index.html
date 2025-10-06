@@ -48,37 +48,66 @@
 
         /* === TAB NAVIGATION === */
         .tab-nav {
+            background: linear-gradient(135deg, #f8f9fa, #ffffff);
             display: flex;
-            background: #dee2e6;
-            overflow-x: auto;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+            border-bottom: 1px solid #e9ecef;
+            padding: 0;
         }
 
         .tab-button {
-            flex: 1;
-            padding: 1.5rem 2rem;
-            text-align: center;
-            cursor: pointer;
-            background: #e9ecef;
-            color: #2c3e50;
-            font-weight: 600;
-            font-size: 1rem;
+            background: white;
             border: none;
-            border-right: 1px solid #dee2e6;
-            min-width: 250px;
-            transition: all 0.3s ease;
+            padding: 1.5rem 2.5rem;
+            color: #6c757d;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border-bottom: 3px solid transparent;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tab-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+            transition: left 0.5s;
+        }
+
+        .tab-button:hover::before {
+            left: 100%;
         }
 
         .tab-button:hover {
-            background: #ced4da;
+            background: #f8f9fa;
+            color: #495057;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
 
         .tab-button.active {
-            background: #3498db;
-            color: white;
+            background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+            color: #1976d2;
+            border-bottom-color: #2196f3;
+            box-shadow: 0 4px 20px rgba(33, 150, 243, 0.2);
         }
 
-        .tab-button:last-child {
-            border-right: none;
+        .tab-button .icon {
+            font-size: 1.3rem;
+            filter: drop-shadow(0 1px 2px rgba(0,0,0,0.1));
         }
 
         /* === CONTENT AREAS === */
@@ -214,10 +243,30 @@
         </div>
 
         <div class="tab-nav">
-            <button class="tab-button active" onclick="showTab(1)">ASK Phase</button>
-            <button class="tab-button" onclick="showTab(2)">Scientific Evidence</button>
-            <button class="tab-button" onclick="showTab(3)">Practitioner Evidence</button>
-            <button class="tab-button" onclick="showTab(4)">Solution & Implementation</button>
+            <button class="tab-button active" onclick="showTab(1)">
+                <span class="icon">🎯</span>
+                ASK Phase
+            </button>
+            <button class="tab-button" onclick="showTab(2)">
+                <span class="icon">🔬</span>
+                Scientific Evidence
+            </button>
+            <button class="tab-button" onclick="showTab(3)">
+                <span class="icon">👩‍⚕️</span>
+                Practitioner Evidence
+            </button>
+            <button class="tab-button" onclick="showTab(4)">
+                <span class="icon">🏢</span>
+                Organizational Evidence
+            </button>
+            <button class="tab-button" onclick="showTab(5)">
+                <span class="icon">👥</span>
+                Stakeholder Evidence
+            </button>
+            <button class="tab-button" onclick="showTab(6)">
+                <span class="icon">🔄</span>
+                Synthesis & Implementation
+            </button>
         </div>
 
         <div class="tab-content">
@@ -324,29 +373,114 @@
 
             <!-- Solution & Implementation Tab -->
             <div class="tab-panel" id="tab-4">
-                <h2>Evidence-Based Solutions & Implementation</h2>
+                <h2>🏢 Organizational Evidence</h2>
                 
                 <div class="content-section">
-                    <h4>🚀 Solution Design</h4>
-                    <div class="file-preview" onclick="viewContent('solution-design')">
-                        <div class="file-name">Evidence-Based Recommendations</div>
-                        <div class="file-description">Leadership development interventions and burnout reduction strategies based on synthesized evidence from all four sources. Comprehensive solution framework.</div>
+                    <h4>🏥 Organizational Data Sources</h4>
+                    <div class="file-preview" onclick="viewContent('organizational-sources')">
+                        <div class="file-name">Healthcare Organization Data Collection</div>
+                        <div class="file-description">Internal organizational metrics, performance indicators, and data sources relevant to healthcare worker burnout analysis. Administrative and operational evidence.</div>
+                        <div style="margin-top: 1rem; padding: 0.5rem; background: #e3f2fd; border-radius: 4px; font-size: 0.9rem;">
+                            💡 <strong>Quick Access:</strong> <a href="https://github.com/kwint472/EBM-dashboard-Wintersgill/blob/master/content/evidence-organizational-sources.txt" target="_blank" style="color: #1976d2; text-decoration: none;">View on GitHub →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <h4>📊 Data Analysis Methods</h4>
+                    <div class="file-preview" onclick="viewContent('organizational-methods')">
+                        <div class="file-name">Organizational Evidence Analysis</div>
+                        <div class="file-description">Methods for analyzing organizational data, including statistical approaches, trend analysis, and benchmarking techniques for burnout assessment.</div>
+                        <div style="margin-top: 1rem; padding: 0.5rem; background: #e3f2fd; border-radius: 4px; font-size: 0.9rem;">
+                            💡 <strong>Quick Access:</strong> <a href="https://github.com/kwint472/EBM-dashboard-Wintersgill/blob/master/content/evidence-organizational-methods.txt" target="_blank" style="color: #1976d2; text-decoration: none;">View on GitHub →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <h4>🔍 Critical Appraisal</h4>
+                    <div class="file-preview" onclick="viewContent('organizational-appraisal')">
+                        <div class="file-name">Organizational Evidence Assessment</div>
+                        <div class="file-description">Quality assessment and critical appraisal of organizational data reliability, validity, and relevance to burnout intervention planning.</div>
+                        <div style="margin-top: 1rem; padding: 0.5rem; background: #e3f2fd; border-radius: 4px; font-size: 0.9rem;">
+                            💡 <strong>Quick Access:</strong> <a href="https://github.com/kwint472/EBM-dashboard-Wintersgill/blob/master/content/evidence-organizational-appraisal.txt" target="_blank" style="color: #1976d2; text-decoration: none;">View on GitHub →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stakeholder Evidence Tab -->
+            <div class="tab-panel" id="tab-5">
+                <h2>👥 Stakeholder Evidence</h2>
+                
+                <div class="content-section">
+                    <h4>🗣️ Stakeholder Data Sources</h4>
+                    <div class="file-preview" onclick="viewContent('stakeholder-sources')">
+                        <div class="file-name">Stakeholder Input Collection</div>
+                        <div class="file-description">Methods for gathering stakeholder perspectives, surveys, interviews, and feedback mechanisms for understanding burnout impact and solution preferences.</div>
+                        <div style="margin-top: 1rem; padding: 0.5rem; background: #e3f2fd; border-radius: 4px; font-size: 0.9rem;">
+                            💡 <strong>Quick Access:</strong> <a href="https://github.com/kwint472/EBM-dashboard-Wintersgill/blob/master/content/evidence-stakeholder-sources.txt" target="_blank" style="color: #1976d2; text-decoration: none;">View on GitHub →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <h4>📋 Analysis Methods</h4>
+                    <div class="file-preview" onclick="viewContent('stakeholder-methods')">
+                        <div class="file-name">Stakeholder Evidence Analysis</div>
+                        <div class="file-description">Qualitative and quantitative methods for analyzing stakeholder input, including thematic analysis, consensus building, and priority ranking techniques.</div>
+                        <div style="margin-top: 1rem; padding: 0.5rem; background: #e3f2fd; border-radius: 4px; font-size: 0.9rem;">
+                            💡 <strong>Quick Access:</strong> <a href="https://github.com/kwint472/EBM-dashboard-Wintersgill/blob/master/content/evidence-stakeholder-methods.txt" target="_blank" style="color: #1976d2; text-decoration: none;">View on GitHub →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <h4>⚖️ Critical Assessment</h4>
+                    <div class="file-preview" onclick="viewContent('stakeholder-appraisal')">
+                        <div class="file-name">Stakeholder Evidence Appraisal</div>
+                        <div class="file-description">Critical evaluation of stakeholder evidence quality, bias assessment, and integration strategies for evidence-based decision making.</div>
+                        <div style="margin-top: 1rem; padding: 0.5rem; background: #e3f2fd; border-radius: 4px; font-size: 0.9rem;">
+                            💡 <strong>Quick Access:</strong> <a href="https://github.com/kwint472/EBM-dashboard-Wintersgill/blob/master/content/evidence-stakeholder-appraisal.txt" target="_blank" style="color: #1976d2; text-decoration: none;">View on GitHub →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Synthesis & Implementation Tab -->
+            <div class="tab-panel" id="tab-6">
+                <h2>🔄 Synthesis & Implementation</h2>
+                
+                <div class="content-section">
+                    <h4>🔗 Evidence Integration</h4>
+                    <div class="file-preview" onclick="viewContent('synthesis-integration')">
+                        <div class="file-name">Multi-Source Evidence Synthesis</div>
+                        <div class="file-description">Integration of scientific, practitioner, organizational, and stakeholder evidence into comprehensive recommendations for healthcare worker burnout interventions.</div>
+                        <div style="margin-top: 1rem; padding: 0.5rem; background: #e3f2fd; border-radius: 4px; font-size: 0.9rem;">
+                            💡 <strong>Quick Access:</strong> <a href="https://github.com/kwint472/EBM-dashboard-Wintersgill/blob/master/content/synthesis-integration.txt" target="_blank" style="color: #1976d2; text-decoration: none;">View on GitHub →</a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="content-section">
                     <h4>📈 Implementation Strategy</h4>
-                    <div class="file-preview" onclick="viewContent('implementation')">
-                        <div class="file-name">Implementation Plan & Resource Requirements</div>
-                        <div class="file-description">Detailed implementation strategy with timelines, resources, and stakeholder engagement plans. Risk assessment and mitigation strategies included.</div>
+                    <div class="file-preview" onclick="viewContent('application-implementation')">
+                        <div class="file-name">Evidence-Based Implementation Plan</div>
+                        <div class="file-description">Comprehensive implementation strategy with timelines, resources, stakeholder engagement, and change management protocols for burnout reduction initiatives.</div>
+                        <div style="margin-top: 1rem; padding: 0.5rem; background: #e3f2fd; border-radius: 4px; font-size: 0.9rem;">
+                            💡 <strong>Quick Access:</strong> <a href="https://github.com/kwint472/EBM-dashboard-Wintersgill/blob/master/content/application-implementation.txt" target="_blank" style="color: #1976d2; text-decoration: none;">View on GitHub →</a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="content-section">
-                    <h4>📊 Assessment & Monitoring</h4>
-                    <div class="file-preview" onclick="viewContent('assessment')">
-                        <div class="file-name">Evaluation Framework</div>
-                        <div class="file-description">Key performance indicators, monitoring systems, and success measurement protocols. Evidence-based evaluation methodology with stakeholder feedback integration.</div>
+                    <h4>📊 Monitoring & Evaluation</h4>
+                    <div class="file-preview" onclick="viewContent('assessment-monitoring')">
+                        <div class="file-name">Assessment & Monitoring Framework</div>
+                        <div class="file-description">Key performance indicators, evaluation methods, and continuous monitoring systems for tracking implementation success and measuring burnout reduction outcomes.</div>
+                        <div style="margin-top: 1rem; padding: 0.5rem; background: #e3f2fd; border-radius: 4px; font-size: 0.9rem;">
+                            💡 <strong>Quick Access:</strong> <a href="https://github.com/kwint472/EBM-dashboard-Wintersgill/blob/master/content/assessment-monitoring.txt" target="_blank" style="color: #1976d2; text-decoration: none;">View on GitHub →</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -649,45 +783,40 @@
         }
         
         function formatContentBeautifully(content) {
-            // Create beautiful formatted content with enhanced styling
+            // Clean and format content properly
             let formattedContent = content
-                // Handle headers with beautiful styling
-                .replace(/^# (.*$)/gim, '<h1 style="color: #2c3e50; font-size: 2.2rem; margin: 2rem 0 1rem 0; padding: 1rem; background: linear-gradient(135deg, #3498db, #2980b9); color: white; border-radius: 8px; text-align: center; box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);">🎯 $1</h1>')
-                .replace(/^## (.*$)/gim, '<h2 style="color: #2980b9; font-size: 1.8rem; margin: 1.5rem 0 1rem 0; padding: 0.8rem; background: linear-gradient(135deg, #e3f2fd, #bbdefb); border-left: 5px solid #3498db; border-radius: 0 8px 8px 0; box-shadow: 0 2px 10px rgba(52, 152, 219, 0.2);">$1</h2>')
-                .replace(/^### (.*$)/gim, '<h3 style="color: #34495e; font-size: 1.4rem; margin: 1.2rem 0 0.8rem 0; padding: 0.6rem; background: linear-gradient(135deg, #f8f9fa, #e9ecef); border-left: 4px solid #95a5a6; border-radius: 0 6px 6px 0;">$1</h3>')
-                .replace(/^#### (.*$)/gim, '<h4 style="color: #555; font-size: 1.2rem; margin: 1rem 0 0.5rem 0; padding: 0.4rem; background: #f8f9fa; border-left: 3px solid #bdc3c7; border-radius: 0 4px 4px 0;">$1</h4>')
+                // Escape HTML first
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
                 
-                // Enhanced bold and italic
-                .replace(/\*\*(.*?)\*\*/g, '<strong style="color: #2c3e50; background: linear-gradient(135deg, #fff3cd, #ffeaa7); padding: 2px 6px; border-radius: 4px; font-weight: 700;">$1</strong>')
-                .replace(/\*(.*?)\*/g, '<em style="color: #6c757d; font-style: italic; background: #f8f9fa; padding: 1px 4px; border-radius: 3px;">$1</em>')
+                // Handle headers with clean styling
+                .replace(/^# (.*$)/gim, '<h1 style="color: #2c3e50; font-size: 2rem; margin: 2rem 0 1rem 0; padding: 1rem; background: linear-gradient(135deg, #3498db, #2980b9); color: white; border-radius: 8px; text-align: center;">🎯 $1</h1>')
+                .replace(/^## (.*$)/gim, '<h2 style="color: #2980b9; font-size: 1.6rem; margin: 1.5rem 0 1rem 0; padding: 0.8rem; background: #e3f2fd; border-left: 5px solid #3498db; border-radius: 0 8px 8px 0;">$1</h2>')
+                .replace(/^### (.*$)/gim, '<h3 style="color: #34495e; font-size: 1.3rem; margin: 1.2rem 0 0.8rem 0; padding: 0.6rem; background: #f8f9fa; border-left: 4px solid #95a5a6; border-radius: 0 6px 6px 0;">$1</h3>')
+                .replace(/^#### (.*$)/gim, '<h4 style="color: #555; font-size: 1.1rem; margin: 1rem 0 0.5rem 0; padding: 0.4rem; background: #f8f9fa; border-left: 3px solid #bdc3c7;">$1</h4>')
                 
-                // Beautiful lists
-                .replace(/^- (.*$)/gim, '<li style="margin: 0.8rem 0; padding: 0.6rem; background: white; border-left: 4px solid #3498db; border-radius: 0 6px 6px 0; box-shadow: 0 2px 8px rgba(52, 152, 219, 0.1); list-style: none; position: relative;"><span style="color: #3498db; font-weight: bold; margin-right: 0.5rem;">•</span>$1</li>')
-                .replace(/^(\d+)\. (.*$)/gim, '<li style="margin: 0.8rem 0; padding: 0.6rem; background: white; border-left: 4px solid #e74c3c; border-radius: 0 6px 6px 0; box-shadow: 0 2px 8px rgba(231, 76, 60, 0.1); list-style: none; position: relative;"><span style="color: #e74c3c; font-weight: bold; margin-right: 0.5rem;">$1.</span>$2</li>')
+                // Clean bold and italic formatting
+                .replace(/\*\*(.*?)\*\*/g, '<strong style="color: #2c3e50; font-weight: 700;">$1</strong>')
+                .replace(/\*(.*?)\*/g, '<em style="color: #6c757d; font-style: italic;">$1</em>')
                 
-                // Escape HTML properly but preserve our formatting
-                .split('\n').map(line => {
-                    if (line.match(/^<[h1-6|li]/)) return line; // Keep our formatted lines
-                    return line.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-                }).join('\n')
+                // Clean list formatting
+                .replace(/^- (.*$)/gim, '<div style="margin: 0.5rem 0; padding: 0.5rem; border-left: 3px solid #3498db;"><span style="color: #3498db; margin-right: 0.5rem;">•</span>$1</div>')
+                .replace(/^(\d+)\. (.*$)/gim, '<div style="margin: 0.5rem 0; padding: 0.5rem; border-left: 3px solid #e74c3c;"><span style="color: #e74c3c; margin-right: 0.5rem;">$1.</span>$2</div>')
                 
-                // Convert line breaks to proper spacing
-                .replace(/\n\n/g, '<div style="margin: 1.5rem 0;"></div>')
+                // Convert line breaks
+                .replace(/\n\n/g, '<div style="margin: 1rem 0;"></div>')
                 .replace(/\n/g, '<br>');
             
-            // Wrap in beautiful container
+            // Wrap in clean container
             return `
                 <div style="
                     background: white;
                     padding: 2rem;
                     border-radius: 12px;
-                    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-                    border: 1px solid #e9ecef;
                     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-                    line-height: 1.8;
+                    line-height: 1.6;
                     color: #2c3e50;
-                    max-height: 60vh;
-                    overflow-y: auto;
                 ">
                     ${formattedContent}
                 </div>
