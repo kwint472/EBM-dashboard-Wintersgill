@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analysis - Healthcare Leadership & Burnout</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            color: #2d3748;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-align: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #718096;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .nav-btn {
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1em;
+            text-decoration: none;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .nav-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 25px;
+            border-radius: 15px;
+            color: white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .stat-label {
+            font-size: 0.9em;
+            opacity: 0.9;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .stat-value {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .stat-change {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+
+        .chart-section {
+            margin-bottom: 40px;
+        }
+
+        .chart-container {
+            background: #f7fafc;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .chart-title {
+            font-size: 1.5em;
+            color: #2d3748;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .insights {
+            background: #f7fafc;
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 30px;
+        }
+
+        .insight-title {
+            font-size: 1.5em;
+            color: #2d3748;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .insight-item {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            border-left: 4px solid #667eea;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .insight-item h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .insight-item p {
+            color: #4a5568;
+            line-height: 1.6;
+        }
+
+        .data-note {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .data-note strong {
+            color: #856404;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📊 Data Analysis Dashboard</h1>
+        <div class="subtitle">Leadership Interventions & Healthcare Worker Burnout</div>
+
+        <div class="nav-buttons">
+            <a href="index.html" class="nav-btn">← Back to Main Dashboard</a>
+            <button class="nav-btn" onclick="window.open('data-analysis/jolts_healthcare_monthly.csv')">Download Monthly Data</button>
+            <button class="nav-btn" onclick="window.open('data-analysis/combined_leadership_turnover.csv')">Download Combined Data</button>
+        </div>
+
+        <!-- Key Statistics -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-label">Average Quit Rate</div>
+                <div class="stat-value">2.95%</div>
+                <div class="stat-change">+0.69pp since pre-COVID</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Leadership Effectiveness</div>
+                <div class="stat-value">3.46/5</div>
+                <div class="stat-change">-0.15 points since pre-COVID</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Burnout Index</div>
+                <div class="stat-value">3.26/5</div>
+                <div class="stat-change">+0.98 points since pre-COVID</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Correlation</div>
+                <div class="stat-value">-0.66</div>
+                <div class="stat-change">Leadership ↔ Burnout</div>
+            </div>
+        </div>
+
+        <!-- Charts -->
+        <div class="chart-section">
+            <div class="chart-container">
+                <div class="chart-title">Healthcare Worker Quit Rates Over Time (2019-2024)</div>
+                <canvas id="quitRateChart"></canvas>
+            </div>
+
+            <div class="chart-container">
+                <div class="chart-title">Leadership Effectiveness vs Burnout Trends</div>
+                <canvas id="leadershipBurnoutChart"></canvas>
+            </div>
+
+            <div class="chart-container">
+                <div class="chart-title">Correlation: Leadership Effectiveness vs Quit Rate</div>
+                <canvas id="correlationChart"></canvas>
+            </div>
+        </div>
+
+        <!-- Key Insights -->
+        <div class="insights">
+            <div class="insight-title">🔍 Key Findings</div>
+            
+            <div class="insight-item">
+                <h3>1. Strong Negative Correlation: Leadership ↔ Burnout (r = -0.66)</h3>
+                <p>Higher leadership effectiveness scores are associated with lower employee burnout and dissatisfaction. This suggests that leadership quality is a critical factor in employee wellbeing in healthcare settings.</p>
+            </div>
+
+            <div class="insight-item">
+                <h3>2. COVID-19 Sustained Impact on Turnover (+0.69pp)</h3>
+                <p>Healthcare worker quit rates increased by 0.69 percentage points from pre-COVID levels and remain elevated. This represents the "Great Resignation" phenomenon specifically affecting healthcare workers.</p>
+            </div>
+
+            <div class="insight-item">
+                <h3>3. Burnout Surge Post-Pandemic (+0.98 points)</h3>
+                <p>Employee burnout and dissatisfaction scores increased by nearly 1 full point (on a 5-point scale) since 2019. This dramatic increase suggests systemic stress within healthcare organizations.</p>
+            </div>
+
+            <div class="insight-item">
+                <h3>4. Moderate Positive Correlation: Burnout ↔ Quit Rate (r = 0.53)</h3>
+                <p>Higher burnout levels correlate with higher quit rates, validating the use of turnover data as a proxy measure for employee burnout in healthcare settings.</p>
+            </div>
+
+            <div class="insight-item">
+                <h3>5. Leadership Decline During Crisis (-0.15 points)</h3>
+                <p>Leadership effectiveness scores decreased during the pandemic period, potentially due to increased organizational stress, resource constraints, and competing demands on healthcare leaders.</p>
+            </div>
+        </div>
+
+        <!-- Implications -->
+        <div class="insights">
+            <div class="insight-title">💡 Implications for Evidence-Based Management</div>
+            
+            <div class="insight-item">
+                <h3>Investment in Leadership Development</h3>
+                <p>The strong negative correlation between leadership effectiveness and burnout suggests that investing in leadership training and development programs could significantly reduce employee burnout and turnover in healthcare organizations.</p>
+            </div>
+
+            <div class="insight-item">
+                <h3>Targeted Interventions During Crisis Periods</h3>
+                <p>The data shows leadership effectiveness declined during COVID-19 while burnout spiked. Organizations should implement enhanced leadership support systems during crisis periods to maintain effectiveness.</p>
+            </div>
+
+            <div class="insight-item">
+                <h3>Monitoring and Early Warning Systems</h3>
+                <p>Organizations should track both objective metrics (quit rates) and subjective measures (leadership ratings, burnout scores) to identify problems early and implement timely interventions.</p>
+            </div>
+        </div>
+
+        <div class="data-note">
+            <strong>⚠️ Note:</strong> This analysis uses sample data for demonstration purposes. 
+            For actual research, replace with real JOLTS and FEVS data from BLS and OPM respectively.
+        </div>
+    </div>
+
+    <script>
+        // Data from our analysis
+        const years = [2019, 2020, 2021, 2022, 2023, 2024];
+        const quitRates = [2.50, 2.54, 2.97, 3.29, 3.36, 3.05];
+        const leadership = [3.64, 3.33, 3.30, 3.49, 3.56, 3.44];
+        const burnout = [2.42, 2.92, 3.45, 3.47, 3.29, 3.01];
+
+        // Quit Rate Chart
+        const quitCtx = document.getElementById('quitRateChart').getContext('2d');
+        new Chart(quitCtx, {
+            type: 'line',
+            data: {
+                labels: years,
+                datasets: [{
+                    label: 'Healthcare Quit Rate (%)',
+                    data: quitRates,
+                    borderColor: '#667eea',
+                    backgroundColor: 'rgba(102, 126, 234, 0.1)',
+                    borderWidth: 3,
+                    fill: true,
+                    tension: 0.4,
+                    pointRadius: 6,
+                    pointBackgroundColor: '#667eea'
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        display: true,
+                        labels: {
+                            font: { size: 14 }
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: false,
+                        min: 2,
+                        max: 4,
+                        title: {
+                            display: true,
+                            text: 'Quit Rate (%)',
+                            font: { size: 14 }
+                        }
+                    },
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Year',
+                            font: { size: 14 }
+                        }
+                    }
+                }
+            }
+        });
+
+        // Leadership & Burnout Chart
+        const leadershipCtx = document.getElementById('leadershipBurnoutChart').getContext('2d');
+        new Chart(leadershipCtx, {
+            type: 'line',
+            data: {
+                labels: years,
+                datasets: [
+                    {
+                        label: 'Leadership Effectiveness (1-5)',
+                        data: leadership,
+                        borderColor: '#48bb78',
+                        backgroundColor: 'rgba(72, 187, 120, 0.1)',
+                        borderWidth: 3,
+                        tension: 0.4,
+                        pointRadius: 6,
+                        yAxisID: 'y'
+                    },
+                    {
+                        label: 'Burnout/Dissatisfaction (1-5)',
+                        data: burnout,
+                        borderColor: '#f56565',
+                        backgroundColor: 'rgba(245, 101, 101, 0.1)',
+                        borderWidth: 3,
+                        tension: 0.4,
+                        pointRadius: 6,
+                        yAxisID: 'y'
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                interaction: {
+                    mode: 'index',
+                    intersect: false,
+                },
+                plugins: {
+                    legend: {
+                        display: true,
+                        labels: {
+                            font: { size: 14 }
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        type: 'linear',
+                        display: true,
+                        position: 'left',
+                        min: 1,
+                        max: 5,
+                        title: {
+                            display: true,
+                            text: 'Score (1-5 scale)',
+                            font: { size: 14 }
+                        }
+                    }
+                }
+            }
+        });
+
+        // Correlation Chart (Scatter)
+        const correlationData = years.map((year, i) => ({
+            x: leadership[i],
+            y: quitRates[i],
+            label: year
+        }));
+
+        const corrCtx = document.getElementById('correlationChart').getContext('2d');
+        new Chart(corrCtx, {
+            type: 'scatter',
+            data: {
+                datasets: [{
+                    label: 'Leadership vs Quit Rate',
+                    data: correlationData,
+                    backgroundColor: '#667eea',
+                    pointRadius: 8,
+                    pointHoverRadius: 12
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        display: true,
+                        labels: {
+                            font: { size: 14 }
+                        }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return `Year ${context.raw.label}: Leadership ${context.raw.x.toFixed(2)}, Quit Rate ${context.raw.y.toFixed(2)}%`;
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Leadership Effectiveness (1-5)',
+                            font: { size: 14 }
+                        },
+                        min: 3,
+                        max: 4
+                    },
+                    y: {
+                        title: {
+                            display: true,
+                            text: 'Quit Rate (%)',
+                            font: { size: 14 }
+                        },
+                        min: 2,
+                        max: 4
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
