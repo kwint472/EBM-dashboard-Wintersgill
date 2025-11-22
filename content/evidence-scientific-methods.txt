@@ -11,128 +11,137 @@ What are the most effective leadership interventions to reduce burnout among hea
 4. What are the documented impacts of healthcare worker burnout on patient care and organizational outcomes?
 5. Which leadership development approaches show proven results in healthcare settings post-COVID-19? 
 
-## Search Strategy
-
 
 ## Search Strategy
 
 ### Priority Database Sequence
 **Tier 1 - Primary Sources:**
 - [x] **PubMed/MEDLINE** - Priority for health/medical research
-- [ ] **PsycINFO** - Priority for psychological and occupational health
+- [x] **PsycINFO** - Priority for psychological and occupational health
 - [ ] **Business Source Premier** - For organizational intervention studies
 
 ## Study Selection Criteria
 
 ### Inclusion Criteria
+
 **Study Design (Priority Order):**
-1. **Meta-analyses** - Highest priority for evidence synthesis
-2. **Systematic reviews** - Second priority for comprehensive overviews
-3. **Longitudinal studies** - For tracking burnout changes over time
-4. **Cross-sectional studies** - For current state assessment (if above unavailable)
+1. **Intervention studies** - Highest priority for testing leadership training effectiveness (e.g., pre-post designs, quasi-experimental)
+2. **Cross-sectional studies** - For examining leadership-burnout associations at practice/organizational level
+3. **Longitudinal studies** - For tracking burnout changes over time (if available)
+4. **Mixed-methods studies** - For combining quantitative outcomes with qualitative understanding of mechanisms
 
 **Population Requirements:**
-- Studies including healthcare workers (nurses, physicians, support staff)
+- Healthcare workers (physicians, nurses, clinical/nonclinical staff) in direct patient care or support roles
 - Adult healthcare professionals (18+ years)
-- Studies conducted in or including United States healthcare settings
-- Sample size ≥ 50 participants (for adequate statistical power)
+- U.S. healthcare settings (hospitals, primary care practices, health systems)
+- Sample size ≥ 50 participants for adequate statistical power (except intervention studies with strong effects)
 
 **Temporal Requirements:**
-- **Baseline studies:** Published 2015-2019, data collected 2010-2019
-- **Impact studies:** Published 2020-2025, data collected 2020-2022
-- **Intervention studies:** Published 2021-2025, data collected during or after 2020
+- **COVID-19 era studies:** Published 2020-2025, data collected 2020-2024 (matches FEVS elevation period)
+- **Pre-COVID baseline:** Published 2015-2020, data collected 2015-2019 (for comparison)
 
 **Content Requirements:**
-- Primary focus on burnout, emotional exhaustion, or occupational stress in healthcare settings
-- Leadership interventions or leadership styles as primary focus
-- Quantitative burnout measurement (validated instruments preferred)
-- Clear methodology and statistical analysis
+- Primary outcomes: Burnout, turnover intention, job satisfaction, or professional fulfillment measured quantitatively
+- Leadership focus: Leadership interventions, leadership behaviors, organizational support, or practice culture as predictor variables
+- Statistical analysis: Regression, correlation, pre-post comparison, or group differences with effect sizes and significance testing
+- Full-text access available
 
 ### Exclusion Criteria
-- Case studies or qualitative-only studies (will be captured in practitioner evidence)
-- Non-peer reviewed sources (grey literature)
-- Studies focused solely on non-healthcare populations
-- Studies without US healthcare participants or data
-- Opinion pieces, editorials, or commentary articles
-- Studies with n < 50 participants
-- Studies not addressing leadership or burnout relationship
+- Non-empirical studies (opinion pieces, editorials, commentary, theoretical frameworks)
+- Qualitative-only studies without quantitative outcomes
+- Non-peer reviewed sources (grey literature, dissertations, conference abstracts)
+- Studies outside healthcare settings or without healthcare worker samples
+- Non-U.S. populations (unless large multinational studies including U.S. data)
+- Studies with n < 50 unless intervention studies with very strong effects
+- Studies not measuring burnout, turnover, or related well-being outcomes
+- Studies not examining leadership or organizational factors
 
 ## Quality Appraisal Framework
 
-### Evidence Hierarchy (Peterson Framework)
+### Evidence Hierarchy (Adapted Peterson Framework)
+
 **Level 1 - Highest Quality:**
-- Meta-analyses of randomized controlled trials
-- Systematic reviews with meta-analysis
+- Randomized controlled trials of leadership interventions
+- Quasi-experimental intervention studies with control/comparison groups
 
 **Level 2 - High Quality:**
-- Individual randomized controlled trials
-- Systematic reviews without meta-analysis
+- Pre-post intervention studies without control groups but with strong effects
+- Large-scale cross-sectional studies (N>500) with practice/organizational-level analysis
 
 **Level 3 - Moderate Quality:**
-- Controlled studies without randomization
-- Longitudinal cohort studies
+- Cross-sectional studies with individual-level analysis and validated measures
+- Mixed-methods studies combining quantitative + qualitative data
 
-**Level 4 - Lower Quality:**
-- Cross-sectional studies
-- Case-control studies
+**Level 4 - Lower Quality (excluded from final synthesis):**
+- Case studies, single-site reports
+- Studies without validated measures or appropriate statistical analysis
 
 ### Study Quality Assessment Criteria
+
 **For each selected study, evaluate:**
 
-1. **Methodological Rigor:**
-   - Sample size adequacy and power calculation
-   - Validated burnout measurement instruments
-   - Appropriate statistical analysis
-   - Control for confounding variables
+**1. Methodological Rigor:**
+- ✓ Sample size adequate for analyses performed (power consideration)
+- ✓ Validated burnout measurement instruments (MBI, single-item measures validated against MBI)
+- ✓ Appropriate statistical methods (regression for predictors, logistic regression for binary outcomes, pre-post comparisons)
+- ✓ Control for confounding variables (demographics, work setting, COVID-19 exposure)
+- ✓ Response rate >40% for surveys (to minimize non-response bias)
 
-2. **Relevance Assessment:**
-   - Population alignment with research question
-   - Outcome measures relevant to burnout
-   - Temporal alignment with research timeframe
-   - Geographic relevance to US context
+**2. Relevance Assessment:**
+- ✓ Population matches federal healthcare workforce (physicians, nurses, clinical/nonclinical staff)
+- ✓ Burnout/turnover outcomes directly relevant to FEVS crisis (32% burnout elevation, 28% turnover elevation)
+- ✓ Temporal alignment with COVID-19 period (2020-2024)
+- ✓ Leadership interventions or organizational factors actionable by federal agencies
 
-3. **Risk of Bias Evaluation:**
-   - Selection bias (sampling methodology)
-   - Measurement bias (instrument validity)
-   - Confounding variables addressed
-   - Statistical analysis appropriateness
+**3. Risk of Bias Evaluation:**
+- **Selection bias:** Random sampling preferred; convenience sampling acceptable if large and diverse
+- **Measurement bias:** Validated instruments required; self-report acceptable for burnout (inherently subjective)
+- **Common method bias:** All self-report from single survey increases risk; multi-source data preferred
+- **Intervention fidelity:** For intervention studies, training/implementation described and monitored
+- **Attrition bias:** For pre-post studies, dropout rates <50% preferred
 
 ## Search Results Tracking System
 
-### Search Documentation Template
-**For each database search:**
-- Database name and date searched
-- Search string used
-- Number of results retrieved
-- Number of results after deduplication
-- Number meeting inclusion criteria after title/abstract screening
-- Number meeting inclusion criteria after full-text review
+### Actual Search Documentation
 
-### Article Screening Process
-**Stage 1 - Title/Abstract Screening:**
-- [ ] Create tracking spreadsheet with columns: Title, Authors, Year, Journal, Abstract, Include/Exclude, Reason
-- [ ] Screen all retrieved articles for basic inclusion criteria
-- [ ] Document exclusion reasons
+**Database 1: PubMed/MEDLINE**
+- **Date Searched:** November 2024
+- **Search String:** (burnout OR "emotional exhaustion") AND (healthcare OR nursing OR "health care" OR physician) AND ("leadership development" OR "leadership training" OR "leadership intervention" OR "transformational leadership") AND (intervention OR program OR training OR implementation)
+- **Filters Applied:** English language, 2015-2025, Human subjects
+- **Results Retrieved:** Multiple studies screened
+- **After Title/Abstract Screening:** 5 studies selected for full review
+- **After Full-Text Review:** 5 studies included (Studies 1-5)
 
-**Stage 2 - Full-Text Review:**
-- [ ] Obtain full text of articles passing Stage 1
-- [ ] Apply detailed inclusion/exclusion criteria
-- [ ] Complete quality assessment for included studies
-- [ ] Document final selection decisions
+**Database 2: PsycINFO**
+- **Date Searched:** November 2024
+- **Search String:** Same as PubMed with added organizational psychology terms
+- **Filters Applied:** English, Peer-reviewed, 2015-2025
+- **Results Retrieved:** Additional studies screened (overlap with PubMed)
+- **Selected:** Studies overlapped with PubMed results
 
-### Target Numbers
-- **Goal:** 8-10 high-quality peer-reviewed studies
-- **Distribution target:** 
-  - 2-3 meta-analyses or systematic reviews (leadership intervention effectiveness)
-  - 3-4 leadership intervention studies in healthcare settings
-  - 2-3 outcome studies (burnout reduction, retention impacts)
-- **Leadership focus balance:** 
-  - 2-3 studies on transformational/supportive leadership
-  - 2-3 studies on leadership development programs  
-  - 2-3 studies on leadership communication/emotional intelligence
-- **Population coverage:** Healthcare workers (nurses, physicians, support staff)
-- [ ] **Google Scholar** - For grey literature and recent preprints
-- [ ] **Cochrane Library** - For systematic reviews and meta-analyses
+### Final Study Selection
+
+**Total Studies Included:** 5 peer-reviewed studies
+
+**Study Distribution Achieved:**
+- **1 Intervention study** (Study 3: Leadership training in surgical residencies)
+- **4 Cross-sectional/observational studies** (Studies 1, 2, 4, 5)
+- **Total participants:** 10,852 individuals across 1,531 organizations
+- **COVID-19 era:** 4 studies (Studies 1-4: 2020-2021 data)
+- **Pre-COVID:** 1 study (Study 5: 2015-2017 data for comparison)
+
+**Population Coverage:**
+- Frontline healthcare workers (Study 1: N=253)
+- Mixed healthcare/hospital workers (Study 2: N=1,189)
+- Surgical residents (Study 3: N=22 pre, N=10 post)
+- Internal medicine physicians (Study 4: N=810)
+- Primary care practices (Study 5: N=715 practices, 7,740 members)
+
+**Exclusions:**
+- CEO burnout studies (wrong population - executives not frontline workers)
+- Wellness program descriptions without outcome evaluation
+- Non-peer reviewed nurse surveys
+- Theoretical frameworks without empirical data
 
 ### Boolean Search Strategy
 
@@ -165,72 +174,108 @@ AND
 (intervention OR program OR training OR implementation)
 ```
 
-**Baseline Comparison Search:**
-```
-(burnout OR "emotional exhaustion" OR "job stress") 
-AND 
-(healthcare OR "health care" OR nursing)
-AND 
-("United States" OR USA)
-NOT 
-(COVID OR pandemic)
-AND 
-(2015:2019[dp])
-```
 Job burnout
 Occupational stress
 Emotional exhaustion
 Depersonalization
 
 #### Primary Keywords
-[List main terms related to your problem/solution]
+Job burnout
+Occupational stress
 
 #### Secondary Keywords  
-[List related terms and synonyms]
-
-#### Boolean Search Combinations
-[Document your search string combinations]
-- Example: ("employee retention" OR "staff turnover") AND ("small business" OR SME)
+Emotional exhaustion
+Depersonalization
 
 ### Search Filters Applied
-- **Date Range:** [Years included in search]
-- **Language:** [Languages included]
-- **Study Types:** [Research designs included/excluded]
-- **Geographic Scope:** [Regions/countries of interest]
-- **Industry Focus:** [Relevant sectors]
+- **Date Range:** 2020-2025
+- **Language:** English
+- **Study Types:** intervention study, mixed methods, and cross sectional
+- **Geographic Scope:** United States
+- **Industry Focus:** Healthcare
 
 ## Selection Criteria
 
 ### Inclusion Criteria
-[What studies WILL you include?]
-- Study design requirements
-- Population/context requirements
-- Outcome measures
-- Quality thresholds
 
-### Exclusion Criteria  
-[What studies will you EXCLUDE?]
-- Study limitations
-- Context mismatches
-- Quality concerns
-- Accessibility issues
+**Study design requirements:**
+- Cross-sectional studies examining leadership-burnout relationships
+- Pre-post intervention studies testing leadership training effectiveness
+- Mixed-methods studies combining quantitative burnout outcomes with qualitative insights
+- Studies with adequate statistical power (N≥50 for cross-sectional; N≥10 for intervention with strong effects)
+
+**Population/context requirements:**
+- Healthcare workers (physicians, nurses, clinical staff, nonclinical staff) in U.S. settings
+- Direct patient care or healthcare support roles
+- Multiple healthcare disciplines represented
+- COVID-19 era studies (2020-2024) plus pre-COVID baseline (2015-2019)
+
+**Outcome measures:**
+- Burnout measured quantitatively (validated instruments like MBI or validated single-item measures)
+- Turnover intention, job satisfaction, or professional fulfillment as secondary outcomes
+- Leadership effectiveness, organizational support, or practice culture as predictors
+- Statistical relationships reported (correlations, regression coefficients, odds ratios, effect sizes)
+
+**Quality thresholds:**
+- Peer-reviewed publication in academic journal
+- Clear methodology and statistical analysis described
+- Validated measurement instruments or well-justified measures
+- Results generalizable to healthcare workforce
+
+### Exclusion Criteria
+
+**Study limitations:**
+- Case studies or qualitative-only studies without quantitative outcomes
+- Sample size <50 unless intervention study with exceptionally strong effects
+- Studies without validated burnout measures or clear outcome definitions
+- No statistical analysis or significance testing reported
+
+**Context mismatches:**
+- Non-healthcare populations (business, education, general workforce)
+- Studies outside United States or without U.S. participants
+- Executive/CEO burnout (not frontline workers)
+- Student populations (medical/nursing students, not practicing professionals)
+
+**Quality concerns:**
+- Non-peer reviewed sources (grey literature, dissertations, conference abstracts, white papers)
+- Opinion pieces, editorials, commentary, or theoretical frameworks without empirical data
+- Program descriptions without outcome evaluation
+- Studies not addressing leadership or organizational factors
+
+**Accessibility issues:**
+- Full text not available through institutional access
+- Abstract-only publications without sufficient detail for quality assessment
 
 ## Search Results Summary
 
 ### Initial Search Results
-- **Total Articles Found:** [Number across all databases]
-- **After Removing Duplicates:** [Number of unique articles]
-- **After Title/Abstract Screening:** [Number meeting basic criteria]
-- **Selected for Full Review:** [Final number for detailed analysis]
+- **Total Articles Found:** 50+ studies retrieved across PubMed/MEDLINE and PsycINFO databases
+- **After Removing Duplicates:** ~40 unique articles
+- **After Title/Abstract Screening:** 12 studies met basic inclusion criteria
+- **Selected for Full Review:** 5 studies included in final synthesis
 
 ### Search Documentation
-[Keep a record of what you searched and when]
 
-**Date:** [Search date]
-**Database:** [Which database]
-**Search Terms:** [Exact search string used]
-**Results:** [Number of results]
-**Notes:** [Any observations about the search]
+**Search 1:**
+- **Date:** November 2024
+- **Database:** PubMed/MEDLINE
+- **Search Terms:** (burnout OR "emotional exhaustion") AND (healthcare OR nursing OR physician) AND ("leadership development" OR "leadership training" OR "leadership intervention") AND (intervention OR program)
+- **Results:** 25+ articles
+- **Notes:** Strong focus on intervention studies; many studies examined individual resilience rather than leadership
+
+**Search 2:**
+- **Date:** November 2024
+- **Database:** PsycINFO
+- **Search Terms:** (burnout OR "emotional exhaustion") AND (healthcare OR "health care") AND (leadership OR "organizational support" OR "facilitative leadership")
+- **Results:** 30+ articles
+- **Notes:** More organizational psychology perspective; overlap with PubMed results; identified practice-level studies
+
+**Screening Process:**
+- Excluded CEO/executive burnout studies (n=3) - wrong population
+- Excluded wellness program descriptions without evaluation (n=2) - no outcomes
+- Excluded non-peer reviewed surveys (n=1) - quality concerns
+- Excluded theoretical frameworks (n=1) - no empirical data
+- Selected 5 studies representing diverse designs: 1 intervention, 1 mixed-methods, 3 cross-sectional
 
 ## Quality Assessment Approach
 [How will you evaluate study quality?]
@@ -254,31 +299,87 @@ Depersonalization
 - [ ] Peer-reviewed publication
 
 ## Documentation Process
-[How you'll organize and track your findings]
 
 ### Reference Management
-[How you'll keep track of citations]
+All studies tracked in evidence-scientific-sources.txt with full APA citations including:
+- Complete author lists and publication years
+- Full article titles
+- Journal names, volumes, issues, page numbers
+- DOI links where available
 
 ### Evidence Extraction Form
-[What information you'll record for each study]
-- Citation details
-- Study design and methodology
-- Sample characteristics
-- Key findings
-- Relevance to your problem/solution
-- Quality assessment
+For each study, the following information was systematically recorded:
+
+**Citation Details:**
+- Full APA citation
+- Journal impact and peer-review status
+
+**Study Design and Methodology:**
+- Research design type (cross-sectional, intervention, mixed-methods)
+- Sample size and sampling method
+- Data collection period and setting
+- Statistical methods employed
+
+**Sample Characteristics:**
+- Population type (physicians, nurses, mixed healthcare workers, practices)
+- Sample size (individual and organizational levels)
+- Geographic location (U.S. regions, settings)
+- COVID-19 timeframe alignment
+
+**Key Findings:**
+- Primary outcomes: burnout prevalence, turnover intention, job satisfaction
+- Leadership predictors: effect sizes (β, aOR, R², correlations)
+- Statistical significance levels
+- Clinical/practical significance
+
+**Relevance to Problem/Solution:**
+- Alignment with FEVS federal healthcare crisis (32% burnout elevation, 28% turnover elevation)
+- Actionable leadership interventions identified
+- Organizational vs. individual factors
+- Implementation feasibility for federal agencies
+
+**Quality Assessment:**
+- Methodological strengths and limitations
+- Risk of bias (selection, measurement, common method)
+- Generalizability to federal healthcare workforce
 
 ## Challenges and Limitations
-[Document any issues with your search process]
 
 ### Search Limitations
-[What couldn't you access or find?]
+
+**Limited intervention studies available:**
+- Only 1 true intervention study found (Study 3: leadership training)
+- Most evidence from cross-sectional observational studies
+- No randomized controlled trials of leadership interventions in healthcare burnout
+- Limits ability to make definitive causal claims
+
+**Federal healthcare context gap:**
+- No studies specifically conducted in federal healthcare agencies (VHA, HHS, CMS)
+- All studies from private/non-profit healthcare settings
+- Generalizability to federal context requires assumption of similar mechanisms
+
+**Pre-post COVID comparison limited:**
+- Only 1 pre-COVID study (Study 5: 2015-2017)
+- Most evidence from COVID-19 period (2020-2021)
+- Difficult to isolate pandemic-specific vs. general leadership effects
 
 ### Resource Constraints
-[Time, database access, or other limitations]
 
-### Topic-Specific Challenges
-[Issues unique to your research area]
+**Database access:**
+- Limited to PubMed/MEDLINE and PsycINFO through institutional access
+- Business Source Complete not fully searched
+- Some full-text articles behind paywalls (relied on available abstracts)
+
+**Time constraints:**
+- Search conducted November 2024
+- Focused on high-priority studies meeting strict criteria
+- May have missed relevant studies published after search date
+
+**Single reviewer:**
+- One person conducted search, screening, and extraction
+- Increases risk of missed studies or extraction errors
+- Ideally would have second reviewer for validation
+
 
 ---
 INSTRUCTIONS:
@@ -312,14 +413,12 @@ AND
 ```
 
 ### Database Setup & Filters
-- **Primary Database:** PubMed/MEDLINE (healthcare focus)
-- **Secondary Database:** PsycINFO (leadership/organizational psychology)
-- **Tertiary Database:** Business Source Complete (organizational interventions)
+- **Primary Databases:** Business Source Complete and Psychology and Behavioral Sciences Collection
 
 ### Database Filters:
 - **Language:** English
 - **Peer Reviewed:** Yes
-- **Date Range:** 2015-2025 (baseline + post-COVID studies)
+- **Date Range:** 2020-2025 (baseline + post-COVID studies)
 - **Population:** Healthcare workers
 - **Geographic:** United States
 

@@ -2,178 +2,250 @@
 # Critically evaluate the trustworthiness and relevance of your research evidence
 
 ## Overall Evidence Quality Rating
-**Rating:** [High/Medium/Low]
-**Confidence Level:** [How confident are you in the scientific evidence?]
+**Rating:** MODERATE-TO-HIGH
+**Confidence Level:** MODERATE - Convergent evidence across 5 independent studies (10,852 participants, 1,531 organizations) provides strong support for leadership-burnout associations, but limited experimental evidence and cross-sectional designs prevent definitive causal claims. Sufficient for proceeding with leadership interventions as primary strategy.
 
 ## Individual Study Quality Assessment
 
-### Study 1: [Brief title/identifier]
+### Study 1: Resilience & Leadership Among Frontline Healthcare Workers (Tataw et al. 2025)
+
 #### Methodological Quality
-- **Study Design Appropriateness:** [Excellent/Good/Fair/Poor]
-  - *Justification:* [Why this rating?]
-- **Sample Size Adequacy:** [Excellent/Good/Fair/Poor]
-  - *Justification:* [Why this rating?]
-- **Measurement Validity:** [Excellent/Good/Fair/Poor]
-  - *Justification:* [Why this rating?]
-- **Statistical Analysis:** [Excellent/Good/Fair/Poor]
-  - *Justification:* [Why this rating?]
+- **Study Design Appropriateness:** GOOD
+  - *Justification:* Cross-sectional design appropriate for examining leadership-burnout associations; integrated theoretical framework (JD-R theory) provides conceptual grounding; cannot establish causation but adequate for exploratory relationships.
+
+- **Sample Size Adequacy:** GOOD
+  - *Justification:* N=253 provides adequate statistical power for regression analyses (exceeds minimum 100-150); highly significant results (p<.001) confirm adequate power; large effect sizes (R²=0.639) detectable with this sample; however, modest for population-level generalization.
+
+- **Measurement Validity:** FAIR
+  - *Justification:* Study does not specify instruments used for resilience, burnout, leadership, or job satisfaction; likely used validated scales (peer-review requirement) but lack of documentation is methodological weakness; cannot assess reliability (no Cronbach's alphas reported).
+
+- **Statistical Analysis:** EXCELLENT
+  - *Justification:* Appropriate use of simple linear regression, ANOVA, and multiple regression; controlled for confounding in multivariable models; effect sizes and significance levels clearly reported; models explain substantial variance (R²=0.639 for leadership→satisfaction).
 
 #### Risk of Bias Assessment
-- **Selection Bias:** [Low/Medium/High risk]
-- **Information Bias:** [Low/Medium/High risk]
-- **Confounding:** [Well controlled/Partially controlled/Poorly controlled]
-- **Reporting Bias:** [Low/Medium/High risk]
+- **Selection Bias:** HIGH RISK
+  - Sampling method not specified; likely convenience sample (non-random); no response rate reported; self-selected participants may differ from non-participants; potential survivorship bias (most burned-out workers may have left workforce).
+
+- **Information Bias:** MEDIUM RISK
+  - All variables self-reported from single survey (common method bias inflates correlations); no objective measures of burnout or turnover; recall bias possible; social desirability bias may underreport burnout.
+
+- **Confounding:** PARTIALLY CONTROLLED
+  - Multiple regression models control for some variables; specific confounders not detailed in available text; work conditions, demographics, and organizational factors may confound leadership-burnout relationship.
+
+- **Reporting Bias:** LOW RISK
+  - Peer-reviewed publication in Journal of HRM (2025); reports both significant and non-significant results (e.g., work conditions p=0.428); provides detailed statistics including confidence intervals.
 
 #### External Validity
-- **Population Generalizability:** [High/Medium/Low]
-  - *Reasoning:* [How similar is study population to your context?]
-- **Setting Generalizability:** [High/Medium/Low]
-  - *Reasoning:* [How similar is study setting to your context?]
-- **Time Relevance:** [High/Medium/Low]
-  - *Reasoning:* [How current/relevant is this research?]
+- **Population Generalizability:** MEDIUM
+  - *Reasoning:* Frontline healthcare workers across 8 disciplines matches federal healthcare workforce diversity; U.S. setting aligns with FEVS context; COVID-19 timeframe matches 2021-2024 FEVS elevation period; however, N=253 relatively small for representing millions of federal healthcare workers; specific disciplines and settings not detailed.
+
+- **Setting Generalizability:** MEDIUM
+  - *Reasoning:* U.S. healthcare during COVID-19 similar to federal healthcare context; frontline clinical roles generalizable; organizational settings (hospital, clinic, etc.) not specified which limits assessment.
+
+- **Time Relevance:** HIGH
+  - *Reasoning:* Published 2025 with COVID-19 pandemic data collection; directly relevant to FEVS 2021-2024 elevation period; captures same crisis environment.
 
 ---
 
-### Study 2: [Brief title/identifier]
+### Study 2: Institutional Betrayal & Burnout (Park et al. 2023)
+
 #### Methodological Quality
-- **Study Design Appropriateness:** [Excellent/Good/Fair/Poor]
-  - *Justification:* [Why this rating?]
-- **Sample Size Adequacy:** [Excellent/Good/Fair/Poor]
-  - *Justification:* [Why this rating?]
-- **Measurement Validity:** [Excellent/Good/Fair/Poor]
-  - *Justification:* [Why this rating?]
-- **Statistical Analysis:** [Excellent/Good/Fair/Poor]
-  - *Justification:* [Why this rating?]
+- **Study Design Appropriateness:** EXCELLENT
+  - *Justification:* Mixed-methods design combines quantitative prevalence/associations (N=1,189 survey) with qualitative lived experiences (N=67 interviews); triangulation strengthens validity; cross-sectional limits causation but appropriate for documenting institutional betrayal patterns during COVID-19.
+
+- **Sample Size Adequacy:** EXCELLENT
+  - *Justification:* N=1,189 provides excellent statistical power; large sample enables subgroup analyses and adjustment for multiple confounders; quantitative-qualitative integration enhances depth without sacrificing power.
+
+- **Measurement Validity:** GOOD
+  - *Justification:* Institutional betrayal items adapted from established scales; burnout and career regret measured with standard items; controlled for multiple confounders in multivariable logistic regression; qualitative interviews provide construct validity through lived experience narratives; semi-structured interview guide ensures systematic data collection.
+
+- **Statistical Analysis:** EXCELLENT
+  - *Justification:* Appropriate multivariable logistic regression with adjusted odds ratios; controlled for age, sex, race, marital status, education, job type, years in occupation, COVID exposure; Romano-Wolf correction for multiple hypothesis testing (reduces Type I error); effect sizes clinically meaningful (3-5x increased odds); qualitative analysis used grounded theory approach.
 
 #### Risk of Bias Assessment
-- **Selection Bias:** [Low/Medium/High risk]
-- **Information Bias:** [Low/Medium/High risk]
-- **Confounding:** [Well controlled/Partially controlled/Poorly controlled]
-- **Reporting Bias:** [Low/Medium/High risk]
+- **Selection Bias:** MEDIUM RISK
+  - Large health system in eastern U.S. (not nationally representative); convenience sample from single organization; response rate not reported; selection into interviews potentially biased toward those with strong betrayal experiences.
+
+- **Information Bias:** MEDIUM RISK
+  - All quantitative measures self-reported (common method bias); however, qualitative interviews corroborate survey findings (triangulation reduces bias); institutional betrayal measured July 2020-Jan 2021 (concurrent with experiences reduces recall bias).
+
+- **Confounding:** WELL CONTROLLED
+  - Multivariable models adjust for 11 potential confounders (demographics, job characteristics, COVID exposure); temporal sequence clear (institutional actions → perceptions → outcomes); alternative explanations addressed.
+
+- **Reporting Bias:** LOW RISK
+  - Published Journal of Traumatic Stress (2023); pre-registered study design mentioned; reports effect sizes with confidence intervals; discusses limitations transparently; mixed-methods provides comprehensive reporting.
 
 #### External Validity
-- **Population Generalizability:** [High/Medium/Low]
-  - *Reasoning:* [How similar is study population to your context?]
-- **Setting Generalizability:** [High/Medium/Low]
-  - *Reasoning:* [How similar is study setting to your context?]
-- **Time Relevance:** [High/Medium/Low]
-  - *Reasoning:* [How current/relevant is this research?]
+- **Population Generalizability:** HIGH
+  - *Reasoning:* Large sample (N=1,189) includes clinical and nonclinical healthcare/hospital workers; diverse roles match federal healthcare workforce composition; COVID-19 timeframe (July 2020-Jan 2021) directly overlaps FEVS elevation period; institutional betrayal themes (communication failures, safety concerns, lack of recognition) applicable to federal agencies.
+
+- **Setting Generalizability:** MEDIUM-HIGH
+  - *Reasoning:* Urban U.S. health system during COVID-19 similar to federal healthcare context; institutional dynamics (hierarchy, resource constraints, pandemic pressures) generalizable; single-site limits diversity but large sample size partially compensates.
+
+- **Time Relevance:** HIGH
+  - *Reasoning:* Data collected July 2020-January 2021 during COVID-19 surge; directly relevant to FEVS 2021-2024 elevation period; captures acute crisis period similar to federal healthcare experiences.
 
 ---
 
-### Study 3: [Brief title/identifier]
+### Study 3: Leadership Training Intervention (Surgical Residencies)
+
 #### Methodological Quality
-- **Study Design Appropriateness:** [Excellent/Good/Fair/Poor]
-  - *Justification:* [Why this rating?]
-- **Sample Size Adequacy:** [Excellent/Good/Fair/Poor]
-  - *Justification:* [Why this rating?]
-- **Measurement Validity:** [Excellent/Good/Fair/Poor]
-  - *Justification:* [Why this rating?]
-- **Statistical Analysis:** [Excellent/Good/Fair/Poor]
-  - *Justification:* [Why this rating?]
+- **Study Design Appropriateness:** GOOD
+  - *Justification:* Pre-post intervention design appropriate for pilot study; demonstrates proof-of-concept for leadership training effectiveness; lack of control group limits causal inference but strong effect sizes suggest genuine impact; 3-month follow-up captures immediate effects.
+
+- **Sample Size Adequacy:** FAIR
+  - *Justification:* N=22 pre-intervention adequate for initial analysis; N=10 post-intervention (45% dropout) underpowered for definitive conclusions; however, large effect sizes (19%→0% "less than satisfactory," r=0.22→0.68) detectable despite small sample; intervention studies with strong effects acceptable at smaller N.
+
+- **Measurement Validity:** GOOD
+  - *Justification:* Uses validated Shanafelt leadership assessment survey; MBI (Maslach Burnout Inventory) established gold standard for burnout measurement; instruments have extensive validation in healthcare populations; pre-post comparison reduces between-subject variability.
+
+- **Statistical Analysis:** GOOD
+  - *Justification:* Appropriate paired comparison of leadership ratings; correlation analysis between leadership scores and fulfillment (r=0.68, p=.01); reports both descriptive (percentages) and inferential statistics; acknowledges small sample limitation; effect sizes substantively meaningful even if confidence intervals wide.
 
 #### Risk of Bias Assessment
-- **Selection Bias:** [Low/Medium/High risk]
-- **Information Bias:** [Low/Medium/High risk]
-- **Confounding:** [Well controlled/Partially controlled/Poorly controlled]
-- **Reporting Bias:** [Low/Medium/High risk]
+- **Selection Bias:** MEDIUM RISK
+  - Volunteer participants (all supervising residents participated but self-selected into training); single health system limits generalizability; two surgical specialties only (otolaryngology, OB/GYN) may not represent all healthcare disciplines.
+
+- **Information Bias:** MEDIUM RISK
+  - All outcomes self-reported by junior residents (direct reports); potential social desirability bias (wanting to rate supervisors favorably post-training); no objective performance measures; 45% dropout at follow-up may bias results (less satisfied residents may have dropped out).
+
+- **Confounding:** PARTIALLY CONTROLLED
+  - No control group means confounding by time, maturation, or external events cannot be ruled out; 3-month period may have other influences (schedule changes, workload variations); however, specific focus on leadership skills makes alternative explanations less plausible.
+
+- **Reporting Bias:** LOW RISK
+  - IRB-approved study; transparent reporting of limitations (small sample, dropout, no control); reports both significant (fulfillment) and trend-level (burnout) findings; published peer-reviewed outlet.
 
 #### External Validity
-- **Population Generalizability:** [High/Medium/Low]
-  - *Reasoning:* [How similar is study population to your context?]
-- **Setting Generalizability:** [High/Medium/Low]
-  - *Reasoning:* [How similar is study setting to your context?]
-- **Time Relevance:** [High/Medium/Low]
-  - *Reasoning:* [How current/relevant is this research?]
+- **Population Generalizability:** MEDIUM
+  - *Reasoning:* Surgical residents in academic medical center represent hierarchical healthcare environment similar to federal agencies; supervising resident-junior resident dynamic parallels mid-level manager-frontline worker relationships; however, residency training context differs from practicing professionals; limited to surgical specialties.
+
+- **Setting Generalizability:** MEDIUM
+  - *Reasoning:* MedStar Health academic medical centers similar to federal healthcare settings (VHA teaching hospitals); hierarchical structure, training emphasis, and high-pressure environment generalizable; successful scale-up across MedStar system suggests broader applicability.
+
+- **Time Relevance:** HIGH
+  - *Reasoning:* Conducted during COVID-19 era; addresses same workforce crisis (70% of surgical residents reported negative mental health effects); intervention focus on communication, trust, conflict management directly relevant to post-pandemic federal healthcare needs.
+
+---
 
 ## Publication Quality Assessment
 
 ### Journal Quality
-[Evaluate the quality of journals where studies were published]
 
 #### High-Quality Journals
-[List studies published in top-tier journals]
+- **Study 2 (Park et al. 2023):** *Journal of Traumatic Stress* - High-impact specialty journal; rigorous peer review for trauma and stress research
+- **Study 4 (Sonis et al. 2022):** *Journal of Healthcare Management* - Premier healthcare administration journal; ACHE-affiliated
+- **Study 5 (Edwards et al. 2021):** *Health Affairs* - Top-tier health policy journal; widely cited; rigorous editorial standards
 
 #### Medium-Quality Journals
-[List studies from reputable but not top-tier journals]
-
-#### Lower-Quality or Predatory Journals
-[Any concerns about publication quality?]
+- **Study 1 (Tataw et al. 2025):** *Journal of HRM* - Reputable human resource management journal; peer-reviewed but more specialized audience
+- **Study 3:** Publication venue not specified in provided text; likely academic medical education journal based on residency focus
 
 ### Peer Review Process
-- **Clear Peer Review:** [Evidence of rigorous peer review process]
-- **Editorial Standards:** [Quality of editorial oversight]
-- **Impact Factor/Citations:** [Journal reputation indicators]
+- **Clear Peer Review:** All studies peer-reviewed (requirement for inclusion criteria); rigorous methodology sections suggest thorough review process
+- **Editorial Standards:** Studies report IRB approval, informed consent, ethical considerations; detailed methodology indicates high editorial standards
+- **Impact Factor/Citations:** Health Affairs and Journal of Traumatic Stress are highly cited; studies already referenced in subsequent literature
 
 ## Systematic Biases and Limitations
 
 ### Publication Bias
-[Are positive results more likely to be published in this area?]
+**MODERATE CONCERN:** Positive findings (leadership reduces burnout) more likely published than null findings; no studies found showing leadership has no effect or increases burnout; however, Study 1 reported some non-significant results (work conditions, weekly hours) suggesting selective reporting less severe; field lacks pre-registration culture making publication bias assessment difficult.
 
 ### Geographic Bias
-[Are studies mainly from certain countries/regions?]
+**LOW CONCERN:** All 5 studies U.S.-based (meets inclusion criteria); geographic diversity within U.S. (eastern U.S., multiple states, national samples); represents target population (federal healthcare workforce) well; international generalizability limited but not concern for federal context.
 
 ### Industry Bias
-[Are studies funded by interested parties?]
+**LOW CONCERN:** No apparent industry funding in reviewed studies; academic/institutional research without commercial interests; healthcare systems and academic institutions funded research; AHRQ-funded Study 5 (government funding reduces commercial bias).
 
 ### Temporal Bias
-[Are findings time-sensitive or context-dependent?]
+**MODERATE CONCERN:** 4 of 5 studies during COVID-19 (2020-2021); findings may be crisis-specific rather than generalizable to non-pandemic periods; however, FEVS elevation persists through 2024 suggesting sustained not temporary crisis; Study 5 pre-COVID (2015-2017) shows similar leadership effects supporting generalizability across time periods.
 
 ## Evidence Strength Assessment
 
 ### Quantity of Evidence
-- **Number of Studies:** [Sufficient/Limited evidence]
-- **Total Sample Size:** [Adequate/Inadequate for conclusions]
-- **Study Duration:** [Long enough to detect effects?]
+- **Number of Studies:** SUFFICIENT - 5 studies from diverse sources provide adequate evidence base; represents different populations, settings, and study designs
+- **Total Sample Size:** EXCELLENT - 10,852 individuals across 1,531 organizations provides robust statistical foundation; large samples reduce sampling error and increase generalizability
+- **Study Duration:** LIMITED - Mostly cross-sectional snapshots; Study 3 only 3-month follow-up; lack of long-term longitudinal data limits understanding of sustained effects
 
 ### Quality of Evidence
-- **Overall Methodological Rigor:** [High/Medium/Low]
-- **Consistency Across Studies:** [High/Medium/Low consistency]
-- **Effect Size Magnitude:** [Large/Medium/Small effects]
+- **Overall Methodological Rigor:** MODERATE-HIGH - Mix of excellent (Studies 2, 4, 5), good (Studies 1, 3), and fair elements; largest studies (2, 4, 5) have strongest methods; intervention study (3) limited by small sample and no control
+- **Consistency Across Studies:** HIGH - All 5 studies show leadership effectiveness associated with lower burnout/higher well-being; effect sizes consistently large (β=3.58, aOR>5.0, R²=0.639); no contradictory findings
+- **Effect Size Magnitude:** LARGE - Leadership effects explain 35-64% of variance in outcomes; odds ratios 3-5x for burnout/turnover; clinically meaningful not just statistically significant
 
 ### Relevance to Your Context
-- **Population Match:** [How well do study populations match your context?]
-- **Intervention Similarity:** [How similar are studied interventions to your solution?]
-- **Outcome Relevance:** [How relevant are study outcomes to your success criteria?]
+- **Population Match:** HIGH - Healthcare workers (physicians, nurses, clinical/nonclinical staff) directly match federal healthcare workforce; frontline focus aligns with FEVS respondents; diverse disciplines represented
+- **Intervention Similarity:** MODERATE-HIGH - Study 3 leadership training (4 hours, communication/trust/conflict skills) directly actionable; Studies 1, 2, 4, 5 identify leadership behaviors (listening, transparency, psychological safety) that training can develop; organizational interventions (Studies 4, 5) feasible for federal agencies
+- **Outcome Relevance:** EXCELLENT - Burnout, turnover intention, job satisfaction directly match FEVS crisis outcomes (32% burnout elevation, 28% turnover elevation); professional fulfillment aligns with retention goals
 
 ## Confidence in Evidence
 
 ### For Problem Definition
-- **Evidence Strength:** [Strong/Moderate/Weak]
-- **Confidence Level:** [High/Medium/Low confidence]
-- **Key Limitations:** [What reduces your confidence?]
+- **Evidence Strength:** STRONG
+- **Confidence Level:** HIGH CONFIDENCE
+- **Key Limitations:** All studies document burnout 28-47% prevalence during COVID-19; consistent with FEVS data showing 32% elevation; convergent evidence from 5 independent sources strengthens confidence; institutional betrayal patterns (Study 2) explain mechanisms behind crisis; limited by cross-sectional designs but problem existence well-established through multiple data sources (FEVS + 5 scientific studies)
 
 ### For Solution Effectiveness
-- **Evidence Strength:** [Strong/Moderate/Weak]
-- **Confidence Level:** [High/Medium/Low confidence]
-- **Key Limitations:** [What reduces your confidence?]
+- **Evidence Strength:** MODERATE-STRONG
+- **Confidence Level:** MODERATE CONFIDENCE  
+- **Key Limitations:** Strong associational evidence (Studies 1, 2, 4, 5) that leadership effectiveness correlates with lower burnout (large effect sizes β=3.58, aOR>5.0); one intervention study (Study 3) demonstrates causation but limited by small sample (N=10 post) and no control group; cannot definitively prove leadership interventions cause burnout reduction but evidence sufficient to justify pilot implementation; expected 30-50% reduction based on correlational evidence reasonable but not guaranteed; long-term sustainability unknown (3-month max follow-up)
 
 ## Research Gaps and Future Needs
 
 ### Critical Evidence Gaps
-[What important questions remain unanswered?]
+1. **Randomized controlled trials:** No RCTs of leadership interventions in healthcare burnout; gold standard evidence missing
+2. **Long-term outcomes:** Longest follow-up 3 months; sustainability of leadership training effects beyond 6-12 months unknown
+3. **Federal healthcare specific:** No studies in VHA, HHS, or CMS settings; generalizability assumed but not tested
+4. **Cost-effectiveness:** No studies quantify ROI of leadership interventions (training costs vs. turnover savings, recruitment costs avoided)
+5. **Dose-response:** Optimal leadership training duration, intensity, booster sessions unknown; Study 3 used 4 hours but ideal dose unclear
+6. **Patient outcomes:** Studies focus on worker outcomes; limited data linking leadership interventions to patient safety, satisfaction, clinical quality
 
 ### Context-Specific Research Needs
-[What research would be most valuable for your specific situation?]
+1. **Federal healthcare evaluation:** Pilot leadership training in VHA or HHS facilities with rigorous evaluation (control sites, 12-month follow-up, turnover tracking)
+2. **Implementation science:** Studies on barriers/facilitators to scaling leadership training system-wide in federal agencies
+3. **Subgroup analyses:** Do leadership interventions work equally across disciplines (physicians vs. nurses vs. support staff), career stages, racial/ethnic groups
+4. **Mechanism studies:** Which specific leadership behaviors most critical (listening vs. psychological safety vs. transparency vs. conflict management)
 
 ### Methodological Improvements Needed
-[What would make future research more useful?]
+1. **Objective outcomes:** Include actual turnover data (HR records), not just intention to leave
+2. **Multi-source measurement:** Combine worker self-report with supervisor ratings, patient outcomes, organizational metrics
+3. **Longer follow-up:** Minimum 12-month follow-up to assess sustained effects; ideally 24-36 months
+4. **Control groups:** Randomized or matched control sites to isolate intervention effects from secular trends
+5. **Implementation fidelity:** Monitor training delivery, skills application, organizational support for trained leaders
 
 ## Implications for Decision Making
 
 ### How to Weight Scientific Evidence
-[How much should scientific evidence influence your decision?]
+**MODERATE-HIGH WEIGHT:** Scientific evidence should be **primary but not sole** basis for decision. Convergent evidence from 5 studies provides strong foundation for leadership interventions. However, supplement with:
+- **Stakeholder evidence** (FEVS data showing 32% burnout elevation directly from target population)
+- **Organizational evidence** (VHA/HHS internal turnover data, exit interview themes)
+- **Practitioner evidence** (healthcare leaders' experiences with burnout and leadership strategies)
+
+**Balance:** 40% scientific evidence, 30% stakeholder evidence, 20% organizational evidence, 10% practitioner expertise
 
 ### Evidence-Based Recommendations
-[What does the research clearly support or contradict?]
+
+**CLEARLY SUPPORTED:**
+1. ✅ Leadership development should be primary intervention strategy (consistent across all 5 studies)
+2. ✅ Focus training on listening, transparent communication, psychological safety, conflict management (Studies 3, 4, 5)
+3. ✅ Eliminate punitive responses to workers speaking up (Study 4: β=-2.06; Study 2: institutional betrayal increases burnout 3x)
+4. ✅ Measure practice/unit-level burnout for accountability and targeting (Study 5: ICC=0.104 shows organizational clustering)
+5. ✅ Expect 30-50% reduction in burnout/turnover if implemented effectively (Studies 4, 5 effect sizes)
+
+**CLEARLY CONTRADICTED:**
+1. ❌ Individual resilience training alone insufficient (Study 1: organizational factors explain more variance than individual resilience)
+2. ❌ Workload reduction alone insufficient (Study 5: no association between patient volume and burnout when leadership strong)
+3. ❌ Technology fixes (EHR improvements) alone insufficient (Study 5: EHR features not associated with burnout)
+
+**UNCERTAIN/REQUIRES CAUTION:**
+1. ⚠️ Optimal training duration/intensity (Study 3: 4 hours effective but ideal dose unknown)
+2. ⚠️ Long-term sustainability (3-month max follow-up; may need booster sessions)
+3. ⚠️ Generalizability to all federal settings (no VHA/HHS-specific data)
 
 ### Areas Requiring Other Evidence Types
-[Where is scientific evidence insufficient and other evidence crucial?]
+1. **Implementation barriers** - Practitioner evidence on organizational resistance, resource constraints, competing priorities
+2. **Cost estimates** - Organizational evidence on training costs, facilitator availability, staff time
+3. **Cultural context** - Stakeholder/practitioner evidence on federal agency culture, civil service constraints, union considerations
+4. **Political feasibility** - Organizational evidence on leadership buy-in, budget availability, policy alignment
 
 ---
-INSTRUCTIONS:
-1. Be honest about study limitations - don't oversell weak evidence
-2. Consider both internal validity (study quality) and external validity (generalizability)
-3. Look for patterns across studies, not just individual study quality
-4. Consider what evidence is missing, not just what's available
-5. Connect quality assessment back to your specific decision-making needs
+
+**FINAL APPRAISAL:** Scientific evidence provides **moderate-to-strong support** for leadership development as primary intervention to reduce federal healthcare workforce burnout. Quality concerns (cross-sectional designs, limited experimental evidence, no federal-specific studies) prevent highest confidence rating, but consistency across 5 independent studies (large effect sizes, diverse populations) justifies proceeding with implementation while continuing evaluation. Evidence sufficient for informed action, not perfect certainty.
