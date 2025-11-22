@@ -1,0 +1,97 @@
+STAKEHOLDER MAPPING FOR HEALTHCARE WORKFORCE BURNOUT/TURNOVER CRISIS
+================================================================================
+
+STAKEHOLDER MAP (Concentric Circles)
+----------------------------------------
+
+INTERNAL STAKEHOLDERS (Direct Impact, Primary Responsibility):
+• Healthcare Employees (nurses, physicians, clinical staff)
+  - Directly experiencing burnout and making turnover decisions
+  - Primary responsibility: Organization's core workforce
+
+• Leadership/Management
+  - Directly impacted by retention costs and implementation responsibility
+  - Primary responsibility: Decision-makers and intervention implementers
+
+CONNECTED STAKEHOLDERS (Direct/Indirect Impact, Primary/Secondary Responsibility):
+• Patients
+  - Directly impacted by care quality and continuity
+  - Primary responsibility: Service recipients
+
+• Staffing Agencies
+  - Direct impact through temporary placement demand
+  - Secondary responsibility: Workforce suppliers
+
+• Academic Institutions
+  - Indirect impact through training disruption
+  - Secondary responsibility: Education partners
+
+EXTERNAL STAKEHOLDERS (Indirect Impact, Secondary Responsibility):
+• Professional Associations (AACN, ANA, AMA)
+  - Indirect impact, advocacy role
+  - Secondary responsibility: Professional representation
+
+• Regulatory Agencies (JCAHO, CMS)
+  - Indirect impact through quality standards
+  - Secondary responsibility: Oversight bodies
+
+• Insurance Payers
+  - Indirect impact through quality and cost
+  - Secondary responsibility: Reimbursement entities
+
+• Technology Vendors
+  - Indirect impact (EHR administrative burden)
+  - Secondary responsibility: System suppliers
+
+• Local Community
+  - Indirect impact through healthcare access
+  - Secondary responsibility: Society at large
+
+
+================================================================================
+
+POWER/INTEREST DIAGRAM QUADRANTS
+----------------------------------------
+
+MANAGE CLOSELY (High Power, High Interest):
+• Healthcare Leadership/Senior Executives/Hospital Administrators
+  - Control resources and budgets for interventions
+  - Directly impacted by turnover costs ($52,350 per RN)
+  - Accountable for workforce crisis resolution
+  - Strategy: Engage deeply in decision-making, regular updates
+
+KEEP SATISFIED (High Power, Low Interest):
+• Regulatory Agencies (JCAHO, CMS)
+  - High power through accreditation and reimbursement
+  - Lower interest (not focused on this specific issue)
+• Insurance Payers
+  - Financial leverage but may prioritize other quality metrics
+  - Strategy: Keep satisfied, meet their requirements
+
+KEEP INFORMED (Low Power, High Interest):
+• Healthcare Employees (Nurses, Physicians, Clinical Staff)
+  - Directly experiencing burnout (32% above baseline)
+  - Limited organizational decision authority
+  - High interest in solutions that reduce workload
+• Patients
+  - Affected by care quality but limited organizational influence
+  - Strategy: Transparent communication, gather feedback
+
+MONITOR (Low Power, Low Interest):
+• Technology Vendors
+  - Peripheral involvement unless workflow changes required
+• Staffing Agencies
+  - Benefit from status quo (turnover creates demand)
+• Local Community
+  - Broad concern but not focused on specific issue
+• Academic Institutions
+  - Affected by clinical placement disruption but limited power
+  - Strategy: Monitor, minimal effort
+
+MEDIUM POSITIONS:
+• Professional Associations (AACN, ANA, AMA)
+  - Moderate power through advocacy
+  - High interest in workforce well-being
+• Mid-Level Managers
+  - Moderate power (implement but don't set strategy)
+  - High interest (responsible for daily operations)

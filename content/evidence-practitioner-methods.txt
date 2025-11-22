@@ -2,48 +2,48 @@
 # Document your approach to gathering expert insights and professional experience
 
 ## Practitioner Evidence Goals
-**Primary Goal:** [What practitioner insights do you need about your problem?]
-**Secondary Goal:** [What practitioner insights do you need about potential solutions?]
+**Primary Goal:** Understand practitioner perspectives on healthcare worker burnout causes, organizational impacts, and key factors influencing turnover and retention in post-COVID healthcare settings.
+**Secondary Goal:** Identify leadership intervention strategies and wellness programs that healthcare practitioners have successfully implemented to reduce burnout and improve workforce stability.
 
 ## Target Practitioners
 
 ### Industry Experts
-**Target Profile:** [What type of professional experience is most relevant?]
-- Years of experience desired: [Range]
-- Industry/sector focus: [Specific industries]
-- Role/position types: [Management levels, functional areas]
-- Company size experience: [Startup, SME, large enterprise]
-- Geographic location: [Local, national, international]
+**Target Profile:** Healthcare executives, consultants, and administrators with direct experience implementing leadership interventions and managing workforce burnout in hospital and health system settings
+- Years of experience desired: 10+ years in healthcare leadership, consulting, or workforce development
+- Industry/sector focus: Healthcare (hospitals, health systems, academic medical centers, healthcare consulting)
+- Role/position types: C-suite executives (CMO, CEO), healthcare consultants, directors of employee wellness/resilience programs, graduate medical education leaders, chief nursing officers
+- Company size experience: Medium to large healthcare organizations (500+ bed hospitals, multi-facility health systems, national consulting firms)
+- Geographic location: National (United States healthcare organizations)
 
 ### Specific Practitioners Identified
-1. **Name/Title/Organization:** [If known]
-   - **Relevance:** [Why this person's experience matters]
-   - **Contact Method:** [How you'll reach them]
+1. **Name/Title/Organization:** Katherine A. Meese, PhD / CEO / HuMargin Group (Healthcare Executive Magazine, ACHE)
+   - **Relevance:** Healthcare consultant with research from 6,000+ healthcare workers identifying leadership factors (trust, recognition, belonging) as top turnover predictors.
+   - **Contact Method:** Published article in Healthcare Executive (November/December 2025) accessed via ACHE website
 
-2. **Name/Title/Organization:** [If known]
-   - **Relevance:** [Why this person's experience matters]
-   - **Contact Method:** [How you'll reach them]
+2. **Name/Title/Organization:** Press Ganey / Healthcare Performance Improvement Consulting Firm / Works with 41,000+ healthcare facilities nationwide
+   - **Relevance:** Leading healthcare consulting firm providing practitioner insights from 2.3 million employee responses on workforce engagement, turnover trends (18%), and leadership impact.
+   - **Contact Method:** Published industry report "Healthcare Employee Experience 2025" accessed via Press Ganey website
 
-3. **Name/Title/Organization:** [If known]
-   - **Relevance:** [Why this person's experience matters]
-   - **Contact Method:** [How you'll reach them]
+3. **Name/Title/Organization:** Dr. Jeff Schneider (Associate Chief Medical Officer, Chair of GME) & Simone Martell (Director of Employee Resilience Program) / Boston Medical Center
+   - **Relevance:** Hospital practitioners who implemented leadership-driven wellness programs with preventive approaches and peer support strategies to address healthcare worker burnout.
+   - **Contact Method:** Published case study featured in American Hospital Association blog (September 2025) accessed via AHA.org
 
 ## Acquisition Methods
 
 ### Expert Interviews
 #### Interview Planning
-- **Target Number:** [How many interviews planned?]
-- **Interview Length:** [Estimated duration]
-- **Interview Method:** [In-person, phone, video, email]
-- **Recording Plan:** [How will you capture responses?]
+- **Target Number:** 3
+- **Interview Length:** 30 minutes to one hour
+- **Interview Method:** video
+- **Recording Plan:** Note taking
 
 #### Interview Protocol
 **Opening Questions:**
-- Can you tell me about your experience with [problem area]?
+- Can you tell me about your experience with burnuot in healthcare organizations after COVID?
 - How long have you been working in this field/role?
 
 **Problem-Focused Questions:**
-- Have you encountered [your specific problem] in your work?
+- Have you encountered burout in your work?
 - What causes this type of problem in your experience?
 - How common is this problem in organizations you've worked with?
 
@@ -63,95 +63,73 @@
 
 ### Professional Networks
 
-#### LinkedIn Outreach
-- **Target Search Terms:** [Keywords for finding relevant professionals]
-- **Connection Strategy:** [How you'll approach potential contacts]
-- **Message Template:** [Professional outreach message]
-
 #### Industry Associations
-- **Relevant Associations:** [Professional organizations in your field]
-- **Contact Strategy:** [How you'll engage with association members]
-- **Events/Forums:** [Industry events where you might connect with experts]
+- **Relevant Associations:** American College of Healthcare Executives (ACHE), American Hospital Association (AHA), Press Ganey
+- **Contact Strategy:** Accessed published articles, industry reports, and podcast interviews through association websites and member publications
+- **Events/Forums:** AHA Advancing Health Podcast series, Healthcare Executive magazine, Press Ganey workforce engagement reports
 
 ### Case Study Research
 
 #### Published Case Studies
-- **Target Sources:** [Harvard Business Review, industry publications, consulting reports]
-- **Search Strategy:** [How you'll find relevant case studies]
-- **Documentation Plan:** [How you'll organize case study insights]
+- **Target Sources:** American Hospital Association (AHA) publications, case studies, and Advancing Health Podcast practitioner interviews
+- **Search Strategy:** Searched AHA website for published case studies and practitioner interviews with healthcare executives discussing successful burnout interventions and retention strategies
+- **Documentation Plan:** Compiled source URLs, practitioner credentials, organizational contexts, intervention strategies, measurable outcomes, and key lessons learned
 
 #### Company Examples
-- **Target Companies:** [Organizations known for addressing similar problems]
-- **Information Sources:** [Annual reports, news articles, presentations]
-- **Contact Strategy:** [How you might reach company representatives]
+- **Target Companies:** Boston Medical Center, NYC Health + Hospitals, Centra Health
+- **Information Sources:** AHA case studies and podcast interviews featuring leadership teams from these organizations
+- **Contact Strategy:** Accessed published case studies and practitioner interviews through AHA website documenting these organizations' burnout and retention interventions
 
 ## Documentation Strategy
 
 ### Interview Documentation
-- **Recording:** [Will you record interviews? If so, how?]
-- **Note-taking:** [Real-time notes plus post-interview summary]
-- **Transcription:** [Full or partial transcription plan]
-- **Analysis:** [How you'll analyze and code responses]
+- **Recording:** N/A - Used published podcast interviews, not direct recordings
+- **Note-taking:** Documented practitioner names, credentials, organizations, key insights on burnout causes and leadership interventions from podcast episode descriptions
+- **Transcription:** N/A - Podcast transcripts not directly accessed
+- **Analysis:** Identified key themes on mental health support, cultural change, retention strategies, and measurable outcomes from practitioner discussions
 
 ### Case Study Documentation
-- **Template:** [Standardized format for case study summaries]
-- **Key Elements:** [What information you'll capture for each case]
-- **Source Tracking:** [How you'll maintain citation information]
-
-## Outreach Strategy
-
-### Contact Approach
-**Initial Contact Message Template:**
-[Draft your professional outreach message]
-
-**Follow-up Strategy:**
-[How and when you'll follow up if no initial response]
-
-**Incentives:**
-[What you can offer in return - summary of findings, networking, etc.]
-
-### Timing Plan
-- **Outreach Start Date:** [When you'll begin contacting practitioners]
-- **Interview Window:** [Timeline for conducting interviews]
-- **Follow-up Period:** [Time allowed for additional questions]
+- **Template:** Standardized case study format capturing organization background, problem context, solution approach, measurable results, and lessons learned
+- **Key Elements:** Organization name/size, problem severity, intervention strategies implemented, quantitative outcomes (turnover rates, retention improvements), success factors, and applicability to healthcare worker burnout
+- **Source Tracking:** Maintained source URLs from AHA website, publication dates, practitioner names/titles, and organizational affiliations for all case studies and interviews
 
 ## Ethical Considerations
 
 ### Informed Consent
-- **Purpose Explanation:** [How you'll explain your research purpose]
-- **Use of Information:** [How you'll use their insights]
-- **Anonymity/Attribution:** [Will you identify them or keep anonymous?]
-- **Approval Process:** [Will they review how you use their input?]
+- **Purpose Explanation:** N/A - Used publicly available published sources
+- **Use of Information:** Cited published practitioner interviews and case studies with full attribution to authors and organizations
+- **Anonymity/Attribution:** All practitioners fully identified with names, titles, and organizational affiliations as published
+- **Approval Process:** N/A - Information already published in public domain
 
 ### Professional Courtesy
-- **Time Respect:** [Staying within agreed time limits]
-- **Preparation:** [Being well-prepared for interactions]
-- **Follow-through:** [Sharing results if promised]
+- **Time Respect:** N/A - Did not conduct direct interviews
+- **Preparation:** Reviewed episode descriptions and organizational contexts before documenting insights
+- **Follow-through:** N/A - Did not make commitments to individual practitioners
 
 ## Expected Challenges
 
 ### Access Challenges
-[What difficulties might you face reaching practitioners?]
+Limited access to full podcast transcripts; relied on episode descriptions and publicly available summaries
 
 ### Response Rate Concerns
-[What if people don't respond to your outreach?]
+N/A - Did not conduct direct outreach to practitioners
 
 ### Quality Concerns
-[How will you ensure you get valuable insights?]
+Ensured quality by using reputable healthcare association sources (AHA, ACHE) and verifying practitioner credentials
 
 ### Time Constraints
-[How will time limitations affect your approach?]
+Time constraints managed by focusing on readily accessible published sources rather than scheduling interviews
 
 ## Backup Plans
 
 ### Alternative Sources
-[What will you do if you can't reach enough practitioners?]
+Used published case studies and practitioner interviews as primary sources instead of conducting direct interviews
 
 ### Modified Approaches
-[How might you adapt your methods if needed?]
+Adapted from planned direct interviews to published practitioner insights due to time and access constraints
 
 ### Minimum Viable Evidence
-[What's the minimum practitioner evidence you need?]
+Minimum of 2 practitioner interviews and 3 organizational case studies from reputable healthcare sources achieved
 
 ---
 INSTRUCTIONS:
