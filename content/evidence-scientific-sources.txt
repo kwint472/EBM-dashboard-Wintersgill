@@ -2,10 +2,42 @@
 # Document and summarize the research studies you found
 
 ## Evidence Summary Overview
-**Total Studies Reviewed:** [Number]
-**Date Range of Studies:** [Earliest to most recent]
-**Geographic Scope:** [Countries/regions represented]
-**Quality Level:** [Overall assessment: High/Medium/Low]
+**Total Studies Reviewed:** 5 peer-reviewed studies
+**Date Range of Studies:** 2015-2025 (2015, 2017, 2022, 2023, 2025)
+**Total Participants:** 10,852 healthcare workers across 5 studies (N=253, N=1,189, N=22 pre/10 post, N=9,026, N=522 practices ~9,000 patients)
+**Geographic Scope:** United States (nationwide physician samples, regional healthcare systems, single-site academic medical center)
+**Setting Focus:** COVID-19 era healthcare (Studies 1, 2, 3) and baseline/longitudinal pre-COVID (Studies 4, 5) providing comparison
+**Quality Level:** MODERATE-TO-HIGH (mix of ⭐⭐ to ⭐⭐⭐⭐⭐ quality ratings; see Appraisal file for detailed ratings)
+
+---
+
+## EFFECT SIZE SUMMARY TABLE - Quick Reference for AGGREGATE
+
+**Purpose:** When comparing scientific findings against practitioner/organizational/stakeholder evidence in Milestone 3, use these effect sizes to weight which findings matter most. Larger effects = stronger evidence = higher priority for intervention design.
+
+| **Study** | **Key Finding** | **Effect Size** | **Magnitude Interpretation** | **Priority for AGGREGATE** |
+|-----------|-----------------|-----------------|------------------------------|----------------------------|
+| **Study 2 (Park 2023)** | Institutional betrayal → Career regret | aOR = 5.23, 95% CI [3.75, 7.29] | **VERY LARGE** (5x increased odds) | ⭐⭐⭐⭐⭐ HIGHEST - Converges with stakeholder FEVS 33.9% betrayed |
+| **Study 2 (Park 2023)** | Poor communication → Career regret | aOR = 5.23, 95% CI [3.75, 7.29] | **VERY LARGE** (5x odds) | ⭐⭐⭐⭐⭐ HIGHEST - Converges with FEVS 23.6% poor communication |
+| **Study 2 (Park 2023)** | Poor resource distribution → Career regret | aOR = 4.44, 95% CI [3.32, 5.95] | **VERY LARGE** (4x odds) | ⭐⭐⭐⭐⭐ HIGHEST |
+| **Study 2 (Park 2023)** | Institutional betrayal → Burnout | aOR = 3.62, 95% CI [2.70, 4.85] | **VERY LARGE** (3-4x odds) | ⭐⭐⭐⭐⭐ HIGHEST |
+| **Study 4 (Shanafelt 2015)** | Leadership effectiveness → Burnout | β = 3.58, p < .001 | **VERY LARGE** (strongest predictor) | ⭐⭐⭐⭐⭐ HIGHEST - Validated by FEVS r=-0.66 |
+| **Study 1 (Tataw 2025)** | Leadership → Satisfaction | R² = 0.639 (63.9% variance explained) | **LARGE** | ⭐⭐⭐⭐ HIGH - Leadership explains majority of satisfaction |
+| **Study 3 (Doolittle 2022)** | Leadership training intervention | r = 0.22 → 0.68 (p = .01) | **LARGE** (tripled correlation) | ⭐⭐⭐⭐ HIGH - Caution: Small N=10 |
+| **Study 1 (Tataw 2025)** | Burnout → Resilience (inverse) | R² = 0.415 (41.5% variance) | **LARGE** | ⭐⭐⭐ MEDIUM |
+| **Study 1 (Tataw 2025)** | Leadership → Resilience | R² = 0.356 (35.6% variance) | **LARGE** | ⭐⭐⭐ MEDIUM |
+| **Study 2 (Park 2023)** | Poor psychological health response → Burnout | aOR = 3.20, 95% CI [2.41, 4.25] | **LARGE** (3x odds) | ⭐⭐⭐ MEDIUM |
+| **Study 2 (Park 2023)** | Poor communication → Burnout | aOR = 3.00, 95% CI [2.16, 4.18] | **LARGE** (3x odds) | ⭐⭐⭐ MEDIUM |
+| **Study 5 (Dewa 2017)** | Burnout at practice level (not just individual) | ICC = 0.104 (10.4% variance between practices) | **SMALL-MEDIUM** (organizational phenomenon) | ⭐⭐⭐⭐ HIGH for strategy - Justifies organizational interventions |
+| **Study 5 (Dewa 2017)** | Leadership buffers workload effects | Workload→Burnout association only when leadership poor | **Interaction effect** | ⭐⭐⭐⭐ HIGH for strategy - Leadership addresses workload indirectly |
+
+**AGGREGATE Implications:**
+- **PRIORITIZE**: Institutional betrayal (aOR 3-5x), Leadership quality (β=3.58, R²=0.639) = Very large effects validated by practitioner + organizational + stakeholder evidence
+- **SECONDARY**: Resilience through leadership (R²=0.356), Practice-level phenomenon (ICC=0.104) = Important for understanding mechanisms
+- **CAUTION**: Training intervention (r=0.68) promising but small sample (N=10); weight practitioner evidence (NYC H+H, SE Healthcare) equally when synthesizing
+- **DEPRIORITIZE**: Individual resilience alone (Study 1 shows organizational factors explain MORE variance than individual characteristics)
+
+---
 
 ## Study 1: Drivers of Job Satisfaction and Resilience Among US Frontline Healthcare Workers During COVID-19
 ### Citation
@@ -21,6 +53,7 @@ Tataw, D., Spataro, S., Arthur-MENSAH, N., Lasley, J., Patten, D., Patel, U., &
 - **Population:** Frontline healthcare workers across eight disciplines including nursing, medicine, and allied health roles
 - **Setting:** United States, frontline clinical staff working during COVID-19 pandemic
 - **Duration:** Single time-point data collection during COVID-19 pandemic (specific date range not specified)
+- **Quality Rating:** ⭐⭐⭐ MODERATE (see Appraisal file for detailed assessment)
 
 ### Key Findings
 #### Related to Your Problem
